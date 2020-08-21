@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+#tr{
+    border-top: 2px solid black;
+}
+
+.tr1{
+    border-top: 1px solid #D5D5D5;
+}
