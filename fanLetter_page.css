@@ -37,10 +37,13 @@ body{
 
 
 
+
+
 #container{
     height: 300px;
     color: white;
-    background-image: url("./img/soop.png");
+    background-image: url("./img/soop1.png");
+    width: 100%;
     
     display: flex;
     justify-content: center;
@@ -82,6 +85,10 @@ body{
 
 
 
+
+
+
+
 .nav_link{
     margin: 15px;
     
@@ -101,6 +108,17 @@ body{
     color: #1b1b1b;
 }
 
+.write{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    display: flex;
+}
+
+#btn_write{
+    height: 2em;
+    margin-right: 20px;
+}
+
 
 
 
@@ -108,7 +126,6 @@ body{
 
 
 .table{
-    border-spacing: 10px;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
@@ -132,13 +149,26 @@ body{
 
 
 
+
+
+
+
+
+
 /* footer */
+
+
 
 .input{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5em;
+}
+
+
+#input_text{
+    margin: 10px;
 }
 
 .input2{
@@ -164,6 +194,8 @@ body{
 #btn_search{
     background-color: black;
     color: white;
+    border-radius: 7px;
+    margin: 10px;
 }
 
 
