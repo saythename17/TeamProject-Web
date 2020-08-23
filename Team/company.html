@@ -66,6 +66,7 @@
         width: 100%;
         color: white;
         background-image: url(./img/soop.png);
+        background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -82,28 +83,30 @@
       }
 
       .container{
+        background-color: aqua;
         display: flex;
-        width: 1400px;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-between;
         align-content: space-around;
         line-height: 30px;
         margin-top: 40px;
         font-size: 14px;
+        text-decoration: none;
       }
 
       .side{
         display: inline-block;
         margin-top: 50px;
         margin-bottom: 100px;
-        margin-left: 170px;
-        flex-grow: 4;
+        flex-grow: 1;
+        margin-left: 200px;
         color: gray;
-        flex-shrink: 0;
         font-family: monospace;
+                
       }
 
       #span2{
-        display: inline-block;
+        display: flex;
         margin-top: 30px;
         margin-left: 160px;
         font-size: 0;
@@ -123,7 +126,18 @@
         padding: 20px;
         font-display: initial;
         font-family: monospace;
-        
+      }
+
+      table{
+      width: 30%;
+      border: 1px solid black;
+      margin-top: 100px;
+      margin-left: 100px;
+      color: gray;
+      }
+
+      table:tb{
+        padding: 10px;
       }
 
     </style>
@@ -176,13 +190,40 @@
   
 
   <div class="container">
-    <section class="side">
-      <p>회사명&emsp;&emsp;&ensp;&ensp;<strong>매니지먼트 숲</strong></p>
-      <p>설립일 &emsp;&nbsp;&emsp;<strong>2011년4월19일</strong></p>
-      <p>대표이사&nbsp;&nbsp;&emsp;<strong>김장균</strong></p>
-      <p>주소&emsp;&nbsp;&emsp;&emsp;&nbsp;<strong>서울특별시 강남구 학동로 50길 27(논현동 242-35)</strong></p>
-      <p>주요사업&nbsp;&emsp;&nbsp;<strong>연예인 매니지먼트,제작</strong></p>
-    </section>
+
+    <table>
+      <tr>
+        <td>회사명</td>
+        <td><strong>매니지먼트숲</strong></td>
+      </tr>
+
+      <tr>
+        <td>설립일</td>
+        <td><strong>2011년4월19일</strong></td>
+      </tr>
+
+      <tr>
+        <td>대표이사</td>
+        <td><strong>김장균</strong></td>
+      </tr>
+
+      <tr>
+        <td>주소</td>
+        <td><strong>서울특별시 강남구 학동로 50길27(논현동 242-35)</strong></td>
+      </tr>
+
+      <tr>
+        <td>주요사업</td>
+        <td><strong>연예인 매니지먼트,제작</strong></td>
+      </tr>
+    </table>
+    <!-- <section class="side">
+      <p>회사명&emsp;&emsp;&ensp;&ensp;<strong style="margin-left: 30px;">매니지먼트 숲</strong></p>
+      <p>설립일 &emsp;&nbsp;&emsp;<strong style="margin-left: 30px;">2011년4월19일</strong></p>
+      <p>대표이사&nbsp;&nbsp;&emsp;<strong style="margin-left: 30px;">김장균</strong></p>
+      <p>주소&emsp;&nbsp;&emsp;&emsp;&nbsp;<strong style="margin-left: 30px;">서울특별시 강남구 학동로 50길 27(논현동 242-35)</strong></p>
+      <p>주요사업&nbsp;&emsp;&nbsp;<strong style="margin-left: 30px;">연예인 매니지먼트,제작</strong></p>
+    </section> -->
 
     <span id="span2"></span>
    
