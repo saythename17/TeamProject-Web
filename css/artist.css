@@ -107,18 +107,19 @@ i{
     display: flex;
     margin-top: 4em;
     -webkit-justify-content: center;
-	justify-content: center;
+    justify-content: center;
 }
 .list{
     width: 15%;
+    padding-left: 2em;
 }
 .main{
     width: 30%;
+    margin-right: 2em;
 }
 .right{
-    width: 35%;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    width: 40%;
+    padding-right: 1em;
 }
 
 
@@ -227,33 +228,186 @@ ul{
 
 
 /* aside right */
-#info-top{
+#info-top,#info-right{
+    width: 100%;
     display: flex;
     -webkit-justify-content: space-between;
 	justify-content: space-between;
 }
-#info-top ul{
-    list-style: none;
+#info-right{
+    border-bottom: 1px solid #E5E5E5;
 }
-#info-top b{
-    display: inline;
-    font-size: small;
-    color: #999;
-    font-weight: 600;
-
-
+#info-top *,#info-right *{
+    display: inline-block;
 }
 #name{
-    font-size: 3em;
+    font-size: 3em !important;
     color: #333;
     display: inline;
 }
-.right b{
+#info-top #name b{
     font-family: sans-serif;
-    font-size: 1.5em;
     color: #333;
-    letter-spacing: -0.03em;
+    font-size: .4em;
     font-weight: 500;
-    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.03em;
 }
+#info-top h4,#info-top h4 a{
+    color: #999;
+    font-size: small;
+    height: 30px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+#info-top h4 a{
+    text-decoration: none;
+}
+#info-top h4 a:hover{
+    color: #669933;
+}
+.right h4{
+    color: #999;
+    height: 30px;
+    padding-left: 10px;
+}
+#category a{
+    margin-left: 1em;
+    font-size: medium;
+    font-style: normal;
+    color: #888;
+    font-size: 15px;
+    font-weight: 500;    
+    text-decoration: none;
+}
+#category a:hover{
+    color: #669933;
+}
+
+
+
+
+
+
+
+
+
+#info-base ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 10em;
+    padding-left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    line-height: 22px;
+    color: #666;
+    letter-spacing: -0.03em;
+    list-style-type: disc;
+    font-weight: normal;
+}
+#info-base ul li{
+    width: 100%;
+    font-size: 15px;
+    line-height: 2.5em;
+    color: #666;
+    letter-spacing: -0.03em;
+}
+#info-base ul li b{
+    float: left;
+    width: 15%;
+}
+#info-base pre{
+    display: inline-block;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 1em;
+    color: #333;
+    height: auto;
+    line-height: 30px;
+}
+
+
+
+
+
+
+#info-work h1{
+    color: #333;
+    margin-left: 10px;
+    font-size: 2em;
+    font-weight: 600;
+    /* border-bottom: 1px solid #E5E5E5; */
+}
+#info-work ul{
+    height: 400px;
+    overflow: scroll;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 0em;
+    padding-left: 5%;
+    font-family: 'Noto Sans KR', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    line-height: 22px;
+    color: #666;
+    letter-spacing: -0.03em;
+    list-style-type: disc;
+    font-weight: normal;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+#info-work ul::-webkit-scrollbar {
+    /*display: none; /* Chrome, Safari, Opera*/
+}
+#info-work ul::-webkit-scrollbar {
+    width: 2px; height: 0;
+    background: #f3f3f3;
+    border-radius: 5px;
+    
+}
+#info-work ul::-webkit-scrollbar-thumb {
+    margin-top: 1em;
+    background-color: #b8b8b8;
+    opacity: .4;
+    border-radius: 5px;
+}
+#info-work ul::-webkit-scrollbar-track {
+    margin-top: 1em;
+    background: none;
+}
+
+
+
+
+
+#info-work ul li{
+    width: 100%;
+    font-size: 15px;
+    line-height: 2.5em;
+    color: #666;
+    letter-spacing: -0.03em;
+    margin-bottom: 2em;
+}
+#info-work ul li b{
+    float: left;
+    width: 15%;
+}
+#info-work pre{
+    display: inline-block;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 1em;
+    color: #333;
+    height: auto;
+    line-height: 30px;
+}
+
+
+
 /* aside right */
