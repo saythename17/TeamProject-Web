@@ -361,9 +361,9 @@ ul{
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
-#info-work ul::-webkit-scrollbar {
-    /*display: none; /* Chrome, Safari, Opera*/
-}
+/* #info-work ul::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera
+} */
 #info-work ul::-webkit-scrollbar {
     width: 2px; height: 0;
     background: #f3f3f3;
@@ -371,13 +371,11 @@ ul{
     
 }
 #info-work ul::-webkit-scrollbar-thumb {
-    margin-top: 1em;
     background-color: #b8b8b8;
     opacity: .4;
     border-radius: 5px;
 }
 #info-work ul::-webkit-scrollbar-track {
-    margin-top: 1em;
     background: none;
 }
 
@@ -398,13 +396,12 @@ ul{
     width: 15%;
 }
 #info-work pre{
-    display: inline-block;
+    display: inline;
     font-family: sans-serif;
     text-transform: capitalize;
     font-weight: normal;
     font-size: 1em;
     color: #333;
-    height: auto;
     line-height: 30px;
 }
 
