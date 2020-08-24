@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>매니지먼트숲</title>
+        <link rel='shortcut icon' href='http://www.msoopent.com/data/common/favicon.ico' />
 
         <style>
         *{
@@ -66,15 +67,164 @@
         background-size: 200px 200px; */
         }
 
-        #span2{
-        display: flex;
-        margin-top: 30px;
-        margin-left: 785px;
-        font-size: 0;
-        width: 1px; height: 1000px;
-        border: 0.1px solid silver;
-        border-radius: 2px;
+        #div{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
         }
+        
+        
+        #span{
+          display: inline-block;
+          font-size: 14px;
+          color: #669933;
+          text-align: center;
+          
+         
+        }
+
+        #History{
+          position: relative;
+          display: inline-block;
+          margin-top: -10px;
+          
+
+        }
+
+
+        #span2{
+          display: flex;
+          border-left: 1px solid gray;
+          width: 0.5px;
+          margin-top: 100px;
+          border-radius: 10px;
+          background-color: gray;
+          height: 1900px;
+          opacity: 0.6; 
+          margin-left: auto;
+          margin-right: auto;
+        } 
+
+        #div2{
+          display: inline-block;
+        }
+
+        #div2 span{
+          position: absolute;
+          display: inline-block;
+          border-left: 1px solid gray;
+          width: 60px;
+          margin-top: 440px;
+          margin-left: 891px;
+          border-radius: 3px;
+          background-color: gray;
+          opacity: 0.6; 
+          height: 1px;
+          font-size: 0px;
+        }
+
+        .p{
+          position: absolute;
+          margin-left: 780px;
+          font-size: 40px;
+        }
+
+         #div3{
+          display: inline-block;
+        }
+
+        #div3 span{
+          position: absolute;
+          display: inline-block;
+          border-left: 1px solid gray;
+          width: 60px;
+          margin-top: 150px;
+          margin-left: 295px;
+          border-radius: 3px;
+          background-color: gray;
+          opacity: 0.6; 
+          height: 1px;
+          font-size: 0px;
+
+        }
+
+        .p2{
+          position: absolute;
+          margin-left: 380px;
+          font-size: 40px;
+        }
+
+      
+        #lf1{
+          width: 700px;
+          height: 100px;
+          position: absolute;
+          padding-left: 10px;
+          border-collapse: collapse;
+          text-align: right;
+          margin-left: 150px;
+          margin-top: 480px;
+          font-size: 18px;
+          flex-grow: 3;
+        }
+
+        #lf1 tr td{
+          line-height: 15px;
+          padding-left: 30px;
+          padding-bottom: 15px;
+        }
+
+        #lf2{
+          width: 700px;
+          position: absolute;
+          padding-left: 10px;
+          border-collapse: collapse;
+          text-align: right;
+          margin-left: 150px;
+          margin-top: 1040px;
+          font-size: 18px;
+          flex-grow: 3;
+        }
+
+        #lf2 tr td{
+          padding-left: 10px;
+        }
+
+        #lf3{
+          width: 700px;
+          height: 100px;
+          position: absolute;
+          padding-left: 10px;
+          border-collapse: collapse;
+          text-align: right;
+          margin-left: 150px;
+          margin-top: 1600px;
+          font-size: 18px;
+          flex-grow: 3;
+
+        }
+        #lf3 tr td{
+          padding-left: 15px;
+        }
+
+        #rf1{
+          width: 700px;
+          position: absolute;
+          padding-left: 10px;
+          border-collapse: collapse;
+          text-align: left;
+          margin-left: 200px;
+          margin-top: 1040px;
+          font-size: 18px;
+          flex-grow: 3;
+
+        }
+
+      
+
+
         </style>
     </head>
     <body>
@@ -112,17 +262,138 @@
             <b>MANAGEMENT COMPANY SPECIALIZING IN PREFORMERS</b>
           </div>
 
-    <div>
-        <p style="text-align: center; margin-top: 60px;">
-            <span id="span" style="color: #669933;">since2011</span>
-            <h1 style="text-align: center;">HISTORY</h1>
+    <div id="div">
+        <p style="text-align: center; margin-top: 50px;">
+            <span id="span"><strong>SINCE 2011</strong></span>
+            <h1 id="History" style=" color: #444;">HISTORY</h1>
         </p>
-
     </div>    
 
-    <p>
-        <span id="span2">-</span>
+
+    <div id="div2">
+      <span>-</span>
+
+      <p>
+        <h1 class="p" style="margin-top: 410px;">2016</h1>
+        <table id="lf1">
+          <tr>
+            <td>공유,정유미"부상행" 제69회 칸영화제 비경쟁"미드나잇 스크리닝" 공식초청</td>
+            <td>05</td>
+          </tr>
+
+          
+          <tr>
+            <td>전도연,제52회 백상예술대상 영화부문 여자 최우수연기상(2016)</td>
+            <td>05</td>
+          </tr>
+
+          <tr>
+            <td>배우 정유미 영입</td>
+            <td>03</td>
+          </tr>
+
+          <tr>
+            <td>배우 정가람 영입</td>
+            <td>10</td>
+          </tr>  
+
+          <div id="img1" style="margin-left: 650px;">
+            <img src="./img/garam.jpg" style="margin-top: 620px; position: absolute;" > 
+          </div>
+
+          <div style="margin-left: 450px;">
+            <img src="./img/yumi.jpg" style="margin-top: 620px; position: absolute;"> 
+          </div>
+      </table>
+
     </p>
+
+    <span id="line1" style="margin-top: 1000px;">-</span>
+
+    <h1 class="p" style="margin-top: 970px;">2014</h1>
+
+      <table id="lf2">
+        <tr>
+          <td>전도연 제67회 칸영화제 경쟁부문 심사위원</td>
+          <td>05</td>
+        </tr>
+
+      </table>
+
+
+      <span id="line2" style="margin-top: 1560px;">-</span>
+
+      <h1 class="p" style="margin-top: 1530px;">2012</h1>
+
+      <table id="lf3">
+        <tr>
+          <td>공유 영화"도가니"상영 및 드라마"빅"일본 방영</td>
+          <td>08</td>
+        </tr>
+
+        <tr>
+          <td>공효진 48회 백상예술대상 TV부분 최우수연기상 (최고의 사랑)</td>
+          <td>04</td>
+        </tr>
+
+        <tr>
+          <td>공효진 제33회 청룡영화제 인기스타상 수상</td>
+          <td>11</td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!-- 오른쪽 화면 -->
+    <div id="div3">
+      <span>-</span>
+      <p>
+        <h1 class="p2" style="margin-top: 120px;">2017</h1>
+        <table id="rf1">
+          <tr>
+            <td>07</td>
+            <td>전도연 영화데뷔 20주년 부천국제판타스틱 영화제 특별전 개최</td>
+          </tr>
+
+          <tr>
+            <td>06</td>
+            <td>김재욱 영입</td>
+          </tr>
+
+          <tr>
+            <td>05</td>
+            <td>공유 홍콩 팬미팅,한국 자선바자회 개최</td>
+          </tr>
+
+          <tr>
+            <td>05</td>
+            <td>공유 제53회 백상예술대상 TV 부문 남자 최우수연기상</td>
+          </tr>
+
+          <tr>
+            <td>04</td>
+            <td>공유 대만 팬미팅</td>
+          </tr>
+        </table>
+
+        
+      </p>
+
+
+      
+      <span>-</span>
+
+
+
+
+      <span>-</span>
+
+    </div>
+    <p id="span2"></p>
+    
+    
+    
 
     
 

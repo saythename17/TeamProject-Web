@@ -62,12 +62,13 @@
       
 
       #back{
+        display: flex;
         height: 300px;
         width: 100%;
+        background-repeat: unset;
         color: white;
         background-image: url(./img/soop.png);
         background-position: center;
-        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column; 
@@ -83,62 +84,61 @@
       }
 
       .container{
-        background-color: aqua;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-content: space-around;
-        line-height: 30px;
-        margin-top: 40px;
-        font-size: 14px;
         text-decoration: none;
       }
 
       .side{
-        display: inline-block;
+        width: 500px;
+        height: 150px;
+        border-spacing: 10px;
+        border-collapse: collapse;
+        text-align: left;
+        margin-left: 400px;
         margin-top: 50px;
-        margin-bottom: 100px;
-        flex-grow: 1;
-        margin-left: 200px;
         color: gray;
-        font-family: monospace;
-                
+        font-size: 14px;
+        flex-grow: 1;
       }
 
+
       #span2{
-        display: flex;
         margin-top: 30px;
-        margin-left: 160px;
-        font-size: 0;
-        width: 1px; height: 400px;
-        border: 0.1px solid silver;
-        border-radius: 2px;
+        margin-right: 35px;
+        margin-left: 60px;
+        width: 0.5px;
+        height: 350px;
+        border-left: 1px solid gray ;
+        border-radius: 4px;
+        background-color: gray;
+        opacity: 0.3;
+    
       }
 
       .side2{
-        display: inline-block;
-        flex-grow: 6;
-        margin-right: 15px;
-        margin-left: 20px;
-        margin-top: 20px;
-        color: gray;
-        margin-bottom: 100px;
-        padding: 20px;
-        font-display: initial;
-        font-family: monospace;
+        width: 600px;
+        height: 350px;
+        border-spacing: 20px;
+        border-collapse: collapse;
+        text-align: left;
+        margin-right: 380px;
+        margin-top: 25px;
+        color: #777777;
+        font-size: 15px;
+        flex-grow: 1;
+       
+
       }
 
-      table{
-      width: 30%;
-      border: 1px solid black;
-      margin-top: 100px;
-      margin-left: 100px;
-      color: gray;
+      .side2 tr{
+        border-spacing: 0px;
+        line-height: 25px;
       }
 
-      table:tb{
-        padding: 10px;
-      }
+
 
     </style>
 
@@ -179,8 +179,6 @@
     </div>
 
   
-  
-   
 
   <p style="text-align: center; margin-top: 60px;">
     <span id="span">---</span>
@@ -191,7 +189,7 @@
 
   <div class="container">
 
-    <table>
+    <table class="side">
       <tr>
         <td>회사명</td>
         <td><strong>매니지먼트숲</strong></td>
@@ -199,7 +197,7 @@
 
       <tr>
         <td>설립일</td>
-        <td><strong>2011년4월19일</strong></td>
+        <td><strong> 2011년4월19일</strong></td>
       </tr>
 
       <tr>
@@ -225,17 +223,33 @@
       <p>주요사업&nbsp;&emsp;&nbsp;<strong style="margin-left: 30px;">연예인 매니지먼트,제작</strong></p>
     </section> -->
 
-    <span id="span2"></span>
+    <p id="span2"></p>
    
-    <aside class="side2">
-      <p><strong>매니지먼트 숲은 연기자 전문 매니지먼트 회사로 소속 연기자들이 보다 전문화되고 체계적인 시스템을 바탕으로 작품 및 연예활동을 할 수 있도록 집중적인 서포터를 진행하는데 주력할 것입니다.</strong></p>
-      <br>
-      <br>
-      <p><strong>또한 오랜 실무경험을 통해 축적된 노하우로 소속 연기자들의 장점을 극대화 하고 개성을 부각시켜 대중에 한발 앞서서 호흡할 수 있도록 항상 노력하며 역량 있는 신인 연기자들의 지속적인 발굴과 육성을 통해 국내 시장은 물론 세계시장으로 뻗어나갈 예정입니다.</strong></p>
-      <br>
-      <br>
-      <p><strong>매니지먼트 숲은 연기자, 매니저, 스태프 모두가 항상 신뢰하며 동고동락하는 파트너라는 인식과 함께 숲이라는 큰 울타리로 대중의 신뢰와 사랑을 받을 수 있도록 더 열심히, 더 성실히, 일해 나가며 울창하게 번창하는 매니지먼트 숲이 되겠습니다.</strong></p>
-    </aside>
+    <table class="side2"> 
+      <tr> 
+        <td>
+          <strong>
+        매니지먼트 숲은 연기자 전문 매니지먼트 회사로 소속 연기자들이 보다 전문화되고 체계적인 시스템을 바탕으로 작품 및 연예활동을 할 수 있도록 집중적인 서포터를 진행하는데 주력할 것입니다.
+          </strong>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <strong>
+          또한 오랜 실무경험을 통해 축적된 노하우로 소속 연기자들의 장점을 극대화 하고 개성을 부각시켜 대중에 한발 앞서서 호흡할 수 있도록 항상 노력하며 역량 있는 신인 연기자들의 지속적인 발굴과 육성을 통해 국내 시장은 물론 세계시장으로 뻗어나갈 예정입니다.
+          </strong>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <strong>
+        매니지먼트 숲은 연기자, 매니저, 스태프 모두가 항상 신뢰하며 동고동락하는 파트너라는 인식과 함께 숲이라는 큰 울타리로 대중의 신뢰와 사랑을 받을 수 있도록 더 열심히, 더 성실히, 일해 나가며 울창하게 번창하는 매니지먼트 숲이 되겠습니다.
+          </strong>
+        </td>
+      </tr>
+    </table>
   </div>
    
 
