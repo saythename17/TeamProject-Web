@@ -82,41 +82,39 @@
 
 
 
+
 .table{
-  border-top: 2px solid #555555;
-  border-bottom: 2px solid #555555;
-  margin-right: auto;
-  margin-left: auto;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 
+#title{
+    margin-top: 30px;
+}
 
-td{
+#name{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#msg{
+    border: none;
     padding: 20px;
-    border-bottom: 1px solid lightgrey;
 }
 
-
-
-
-
-
-
-
-
-
-#file_size{
-    font-size: 1px;
-    color: grey;
+#tag{
+    border: none;
+    margin-bottom: 20px;
+    color: #3352a7;
+    padding: 20px;
 }
 
-
-
-
-
-
-
-#btn_cancel{
+#btn{
     background-color: #555555;
     border: none;
     color: white;
@@ -124,40 +122,12 @@ td{
     text-decoration: none;
     font-size: 13px;
     float: right;
-    margin-right: 10px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-
-#btn_ok{
-    background-color: #3352a7;
-    border: none;
-    color: white;
-    padding: 8px 20px;
-    text-decoration: none;
-    font-size: 13px;
-    float: right;
     margin-right: 20%;
-    margin-top: 15px;
     margin-bottom: 30px;
 }
 
 
-#name,#pw,#email,#phone,#title,#tag,#file{
-    height: 30px;
-}
 
-#name,#pw,#email,#phone,#title,#msg,#tag{
-  
-    border: 1px solid lightgrey;
-    border-radius: 4px;
-
-}
-
-#msg{
-    overflow-y: scroll;
-}
 
 
 

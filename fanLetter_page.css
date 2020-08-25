@@ -128,21 +128,31 @@ body{
 .table{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+    margin-bottom: 30px;
     
+}
+
+td{
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
 }
 
 
 
 .tr1{
     border-top: 1px solid #D5D5D5; 
+    padding: 20px;
 }
 
-#tr1_link{
+#title{
     color: #1b1b1b;
 }
 
 
-#tr1_link:hover{
+#title:hover{
     color: #669933;
     text-decoration-line: none;
 }
