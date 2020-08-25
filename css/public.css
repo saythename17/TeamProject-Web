@@ -1,0 +1,37 @@
+/* #아이디 는 이미로 지정한 셀럭터로 본인 프로젝트안의 id나 클래스 명에 맞게 쓰시면 됩니다. */
+
+
+
+
+/* soop main logo img set */
+#logo{
+    width: 272px;
+    margin-top: -1.2%;
+    margin-left: 0.8%;
+}
+
+
+/* sns link icons set */
+#icons{
+    size: 24px;
+    margin-top: 1em;
+    text-align: right;
+    margin-top: 11px;
+    margin-right: 2.5%;
+}
+
+/* title text */
+#title{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+
+/* basic text */
+#font{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    color: #666;
+}
