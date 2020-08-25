@@ -10,6 +10,7 @@
         *{
         padding: 0px;
         margin: 0px;
+        border: gray 1px dotted;
         }
 
         #top{
@@ -90,11 +91,15 @@
           display: inline-block;
           margin-top: -10px;
           
+          
 
         }
 
+        #div3{border: springgreen 1px solid;}
+        #div3 *{border: firebrick 1px solid;}
 
-        #span2{
+
+         /* #span2{
           display: flex;
           border-left: 1px solid gray;
           width: 0.5px;
@@ -105,13 +110,11 @@
           opacity: 0.6; 
           margin-left: auto;
           margin-right: auto;
-        } 
+        }  */
 
-        #div2{
-          display: inline-block;
-        }
+       
 
-        #div2 span{
+      /*  #div2 span{
           position: absolute;
           display: inline-block;
           border-left: 1px solid gray;
@@ -131,9 +134,7 @@
           font-size: 30px;
         }
 
-        #div3{
-          display: inline-block;
-        }
+       
 
         #div3 span{
           position: absolute;
@@ -154,10 +155,10 @@
           position: absolute;
           margin-left: 350px;
           font-size: 30px;
-        }
+        } */
 
       
-        #lf1{
+        /* #lf1{
           width: 700px;
           height: 100px;
           position: absolute;
@@ -226,9 +227,9 @@
         .rf tr td{
           padding-right: 30px;
           padding-bottom: 5px;
-        } 
+        }  */
 
-        .rimgs{
+        /* .rimgs{
           margin-left: 360px;
           position: absolute; 
         }
@@ -241,6 +242,27 @@
         .rimgs3{
           margin-left: 766px;
           position: absolute; 
+        } */
+
+        .container{
+          display: flex;
+          height: 500px;
+          width: 100%;
+          justify-content: center;
+        }
+
+        #div2{
+          width: 40%;
+          flex-direction: column;
+          flex-wrap: wrap-reverse;
+          flex-flow: column-reverse;
+        }
+
+        #div3{
+          width: 40%;
+          flex-direction: column;
+          flex-wrap: wrap-reverse;
+          flex-flow: column-reverse;
         }
 
         
@@ -292,119 +314,120 @@
     </div>    
 
 
-    <div id="div2">
-      <span>-</span>
+    <article class="container">
 
-      <p>
-        <p class="p" style="margin-top: 400px;">2016</p>
-        <table id="lf1">
+      <!-- <div id="div2">
+        <span>-</span>
+  
+        <p>
+          <p class="p" style="margin-top: 400px;">2016</p>
+          <table id="lf1">
+            <tr>
+              <td><strong>공유,정유미"부상행" 제69회 칸영화제 비경쟁"미드나잇 스크리닝" 공식초청</strong></td>
+              <td><strong>05</strong></td>
+            </tr>
+  
+            
+            <tr>
+              <td><strong>전도연,제52회 백상예술대상 영화부문 여자 최우수연기상(2016)</strong></td>
+              <td><strong>05</strong></td>
+            </tr>
+  
+            <tr>
+              <td><strong>배우 정유미 영입</strong></td>
+              <td><strong>03</strong></td>
+            </tr>
+  
+            <tr>
+              <td><strong>배우 정가람 영입</strong></td>
+              <td><strong>10</strong></td>
+            </tr>  
+  
+            <div id="img1" style="margin-left: 670px;">
+              <img src="./img/garam.jpg" style="margin-top: 580px; position: absolute;" > 
+            </div>
+  
+            <div style="margin-left: 450px;">
+              <img src="./img/yumi.jpg" style="margin-top: 580px; position: absolute;"> 
+            </div>
+        </table>
+  
+        </p>
+  
+        <span id="line1" style="margin-top: 980px;">-</span>
+  
+        <p class="p" style="margin-top: 960px;">2014</p>
+  
+        <table id="lf2">
           <tr>
-            <td><strong>공유,정유미"부상행" 제69회 칸영화제 비경쟁"미드나잇 스크리닝" 공식초청</strong></td>
+            <td><strong>전도연 제67회 칸영화제 경쟁부문 심사위원</strong></td>
             <td><strong>05</strong></td>
           </tr>
-
-          
+  
+        </table>
+  
+  
+        <span id="line2" style="margin-top: 1460px;">-</span>
+  
+        <p class="p" style="margin-top: 1440px;">2012</p>
+  
+        <table id="lf3">
           <tr>
-            <td><strong>전도연,제52회 백상예술대상 영화부문 여자 최우수연기상(2016)</strong></td>
-            <td><strong>05</strong></td>
+            <td><strong>공유 영화"도가니"상영 및 드라마"빅"일본 방영</strong></td>
+            <td><strong>08</strong></td>
           </tr>
-
+  
           <tr>
-            <td><strong>배우 정유미 영입</strong></td>
-            <td><strong>03</strong></td>
-          </tr>
-
-          <tr>
-            <td><strong>배우 정가람 영입</strong></td>
-            <td><strong>10</strong></td>
-          </tr>  
-
-          <div id="img1" style="margin-left: 670px;">
-            <img src="./img/garam.jpg" style="margin-top: 580px; position: absolute;" > 
-          </div>
-
-          <div style="margin-left: 450px;">
-            <img src="./img/yumi.jpg" style="margin-top: 580px; position: absolute;"> 
-          </div>
-      </table>
-
-    </p>
-
-    <span id="line1" style="margin-top: 980px;">-</span>
-
-    <p class="p" style="margin-top: 960px;">2014</p>
-
-      <table id="lf2">
-        <tr>
-          <td><strong>전도연 제67회 칸영화제 경쟁부문 심사위원</strong></td>
-          <td><strong>05</strong></td>
-        </tr>
-
-      </table>
-
-
-      <span id="line2" style="margin-top: 1460px;">-</span>
-
-      <p class="p" style="margin-top: 1440px;">2012</p>
-
-      <table id="lf3">
-        <tr>
-          <td><strong>공유 영화"도가니"상영 및 드라마"빅"일본 방영</strong></td>
-          <td><strong>08</strong></td>
-        </tr>
-
-        <tr>
-          <td><strong>공효진 48회 백상예술대상 TV부분 최우수연기상 (최고의 사랑)</strong></td>
-          <td><strong>04</strong></td>
-        </tr>
-
-        <tr>
-          <td><strong>공효진 제33회 청룡영화제 인기스타상 수상</strong></td>
-          <td><strong>11</strong></td>
-        </tr>
-
-      </table>
-
-    </div>
-
-
-
-
-
-    <!-- 오른쪽 화면 -->
-    <div id="div3">
-      <span>-</span>
-      <p>
-        <p class="p2" style="margin-top: 130px;">2017</p>
-        <table class="rf" style="margin-top: 190px; width: 700px;">
-          <tr>
-            <td><strong>07</strong></td>
-            <td><strong>전도연 영화데뷔 20주년 부천국제판타스틱 영화제 특별전 개최</strong></td>
-          </tr>
-
-          <tr>
-            <td><strong>06</strong></td>
-            <td><strong>김재욱 영입</strong></td>
-          </tr>
-
-          <tr>
-            <td><strong>05</strong></td>
-            <td><strong>공유 홍콩 팬미팅,한국 자선바자회 개최</strong></td>
-          </tr>
-
-          <tr>
-            <td><strong>05</strong></td>
-            <td><strong>공유 제53회 백상예술대상 TV 부문 남자 최우수연기상</strong></td>
-          </tr>
-
-          <tr>
+            <td><strong>공효진 48회 백상예술대상 TV부분 최우수연기상 (최고의 사랑)</strong></td>
             <td><strong>04</strong></td>
-            <td><strong>공유 대만 팬미팅</strong></td>
           </tr>
+  
+          <tr>
+            <td><strong>공효진 제33회 청룡영화제 인기스타상 수상</strong></td>
+            <td><strong>11</strong></td>
+          </tr>
+  
+        </table>
+  
+      </div> -->
 
-          <div class="rimgs" style="margin-top: 330px;">
+    
+
+    
+
+      <!-- 오른쪽 화면 -->
+      <div id="div3">
+        <span>-</span>
+        <p>
+          <p class="p2" style="margin-top: 130px;">2017</p>
+           <table class="rf" style="margin-top: 190px; width: 700px;">
+              <tr>
+                <td><strong>07</strong></td>
+                <td><strong>전도연 영화데뷔 20주년 부천국제판타스틱 영화제 특별전 개최</strong></td>
+             </tr>
+
+              <tr>
+                <td><strong>06</strong></td>
+                <td><strong>김재욱 영입</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>05</strong></td>
+                <td><strong>공유 홍콩 팬미팅,한국 자선바자회 개최</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>05</strong></td>
+                <td><strong>공유 제53회 백상예술대상 TV 부문 남자 최우수연기상</strong></td>
+              </tr>
+
+              <tr>
+                <td><strong>04</strong></td>
+                <td><strong>공유 대만 팬미팅</strong></td>
+              </tr>
+
+               <div class="rimgs" style="margin-top: 330px;">
             <img src="./img/jea.jpg">
-          </div>
         </table>
 
       </p>
@@ -532,6 +555,8 @@
       </p>
 
     </div>
+
+  </article>
     <p id="span2"></p>
     
     
