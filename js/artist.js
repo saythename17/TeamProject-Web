@@ -67,23 +67,34 @@ var artistInfo=a=>{
 
 //change page-profile, photo, video  
 var profile=()=>{
-    document
-    document.getElementById('actor').style.display = 'flex'
-    document.getElementById('photo').style.display = 'none'
-    // var tabmenu=document.getElementsByClassName('tab')
-    // for(var t in tabmenu){
-    //     if(t==0) tabmenu[t].style.color='#663399'
-    //     tabmenu[t].style.color='#888'
-    // }
+    document.getElementById('actor').style.display = "flex"
+    document.getElementById('photo').style.display = "none"
+    document.getElementById('video').style.display = "none"
+    var tabmenu=document.getElementsByClassName('tab')
+    for(var t in tabmenu){
+        if(t==0) tabmenu[t].style.color='#663399'
+        tabmenu[t].style.color='#888'
+    }
 }
 var photo=()=>{
-    document.getElementById('actor').style.display = 'none'
-    document.getElementById('photo').style.display = 'flex'
-    // var tabmenu=document.getElementsByClassName('tab')
-    // for(var t in tabmenu){
-    //     if(t==0) tabmenu[t].style.color='#663399'
-    //     tabmenu[t].style.color='#888'
-    // }
+    document.getElementById('actor').style.display = "none"
+    document.getElementById('photo').style.display = "flex"
+    document.getElementById('video').style.display = "none"
+    var tabmenu=document.getElementsByClassName('tab')
+    for(var t in tabmenu){
+        if(t==0) tabmenu[t].style.color='#663399'
+        tabmenu[t].style.color='#888'
+    }
+}
+var video=()=>{
+    document.getElementById('actor').style.display = "none"
+    document.getElementById('photo').style.display = "none"
+    document.getElementById('video').style.display = "flex"
+    var tabmenu=document.getElementsByClassName('tab')
+    for(var t in tabmenu){
+        if(t==0) tabmenu[t].style.color='#663399'
+        tabmenu[t].style.color='#888'
+    }
 }
 
 
