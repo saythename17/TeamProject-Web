@@ -4,6 +4,7 @@
 }
 body{
     margin-bottom: 3em;
+    width: 100%;
 }
 /* heaer */
 #icons{
@@ -36,7 +37,7 @@ i{
 }
 .menu{
     margin-left: 2.5em;
-    font-family: sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-size: 20px;
     color: #333;
     text-decoration: none;
@@ -104,22 +105,25 @@ i{
 /* left section */
 .container{
     padding: 0; margin: 0;
-    display: flex;
     margin-top: 4em;
-    -webkit-justify-content: center;
+    display: flex;
     justify-content: center;
 }
-.list{
+#list{
     width: 15%;
     padding-left: 2em;
 }
+#actor{
+    text-align: start;
+    width: 75%;
+    display: flex;
+}
 .main{
-    width: 30%;
+    width: 40%;
     margin-right: 2em;
 }
 .right{
-    width: 40%;
-    padding-right: 1em;
+    width: 60%;
 }
 
 
@@ -133,16 +137,16 @@ ul{
     list-style: none;
 }
 
-.list ul li{
+#list ul li{
     height: 2em;
 }
 
 
 
-.list ul li a{
+#list ul li a{
     transition: .6s;
 }
-.list ul li a span{
+#list ul li a span{
     display: inline-block;
     font-weight: 100;
 
@@ -155,7 +159,7 @@ ul{
     letter-spacing: -0.03em;
 }
    
-.list ul li a:hover span {
+#list ul li a:hover span {
     color: #669933;
     font-weight: bold;
     -webkit-transform: rotateY(360deg);
@@ -164,7 +168,7 @@ ul{
   }
 
 
-.list ul li a:hover{
+#list ul li a:hover{
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 15px;
@@ -176,7 +180,7 @@ ul{
     -webkit-transition-delay: .02s;
     transition-delay: .02s;
 }
-.list ul li a:checked{
+#list ul li a:checked{
     font-family: sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 15px;
@@ -185,6 +189,16 @@ ul{
     letter-spacing: -0.03em;
     text-decoration: none;
     font-weight: 100;
+}
+#list ul li a:checked{
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    line-height: 22px;
+    color: #669933;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    font-weight: 600;
 }
 /* left section */
 
@@ -197,9 +211,10 @@ ul{
     -webkit-justify-content: center;
     justify-content: space-between;
 }
-#sns button{
+#sns a{
     width: 50%;
     display: inline-block;
+    text-align: center;
     margin: 5px 3px;
     padding: 1em 1em;
     background-color: transparent;
@@ -211,8 +226,9 @@ ul{
     color: #669933;
     letter-spacing: -0.03em;
     font-weight: bolder;
+    text-decoration: none;
 }
-#sns button:hover{
+#sns a:hover{
     background-color: #669933;
     color: white;
 }
@@ -228,7 +244,7 @@ ul{
 
 
 /* aside right */
-#info-top,#info-right{
+#info-top,#info-right,#tab{
     width: 100%;
     display: flex;
     -webkit-justify-content: space-between;
@@ -240,12 +256,13 @@ ul{
 #info-top *,#info-right *{
     display: inline-block;
 }
-#name{
+#name,#name2{
+    font-family: sans-serif;
     font-size: 3em !important;
     color: #333;
     display: inline;
 }
-#info-top #name b{
+#info-top #name>#birth{
     font-family: sans-serif;
     color: #333;
     font-size: .4em;
@@ -270,6 +287,9 @@ ul{
     color: #999;
     height: 30px;
     padding-left: 10px;
+}
+#category{
+    flex-shrink: 0;
 }
 #category a{
     margin-left: 1em;
@@ -305,7 +325,7 @@ ul{
     line-height: 22px;
     color: #666;
     letter-spacing: -0.03em;
-    list-style-type: disc;
+    list-style-type: none;
     font-weight: normal;
 }
 #info-base ul li{
@@ -318,6 +338,7 @@ ul{
 #info-base ul li b{
     float: left;
     width: 15%;
+    height: 100%;
 }
 #info-base pre{
     display: inline-block;
@@ -356,7 +377,7 @@ ul{
     line-height: 22px;
     color: #666;
     letter-spacing: -0.03em;
-    list-style-type: disc;
+    list-style-type: none;
     font-weight: normal;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
@@ -383,7 +404,7 @@ ul{
 
 
 
-#info-work ul li{
+#info-work ul li{ 
     width: 100%;
     font-size: 15px;
     line-height: 2.5em;
@@ -394,6 +415,8 @@ ul{
 #info-work ul li b{
     float: left;
     width: 15%;
+    display: table-cell;
+    vertical-align: top;
 }
 #info-work pre{
     display: inline;
@@ -403,8 +426,44 @@ ul{
     font-size: 1em;
     color: #333;
     line-height: 30px;
+    display: table-row;
+    vertical-align: top;
+    border: khaki 1px solid;
 }
 
 
 
 /* aside right */
+
+
+
+
+
+
+
+
+
+/* photo - article*/
+#photo,#photo *{
+    /* border: thistle 1px solid; */
+}
+#photo{
+    width: 75%;
+}
+#sidename{
+    color: #999;
+    font-weight: 600;
+    font-size: .5em;
+    padding-left: 10px;
+    height: 30px;
+}
+#photo-top{
+    width: 100%;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    border-bottom: 1px solid #E5E5E5;
+}
+#photo-top *,#tab *{
+    display: inline-block;
+}
