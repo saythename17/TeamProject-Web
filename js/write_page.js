@@ -31,24 +31,50 @@ function postMethod(){
 
 
 
- function postData(){
-     //alert();
-        var req= new XMLHttpRequest();
-        req.onreadystatechange= function(){
-        if(req.readyState==4 && req.status==200){
+//  function postData(){
+//      //alert();
+//         var req= new XMLHttpRequest();
+//         req.onreadystatechange= function(){
+//         if(req.readyState==4 && req.status==200){
 
-            //alert(req.responseText);
-            alert('aa'); 
-        }else{
-            alert('fail');
-        }
-        req.open('POST', './getData.php', true);
-        req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        req.send();
+//             //alert(req.responseText);
+//             alert('aa'); 
+//         }else{
+//             alert('fail');
+//         }
+//         req.open('POST', './getData.php', true);
+//         req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+//         req.send();
     
-    }
-}
+//     }
+// }
 
+
+function postData(){
+
+    alert('hello');
+
+    var name= $('#name').val();
+    var title= $('#title').val();
+    //var file= $('#file').val();
+    var msg= $('#msg').val();
+    var tag= $('#tag').val();
+
+    var data= "name="+name+"&title="+title+"&file="+file+"&msg="+msg+"$tag="+tag;
+
+    $.ajax({
+        type:"POST",
+        url:"./getData.php",
+        data: data,
+        success: function(data){
+            $('#name').html(data.name);
+            $('#msg').html(data.title);
+            $('#msg').html(data.msg);
+            $('#tag').html(data.tag);
+        }
+    })
+
+}
 
 
 
