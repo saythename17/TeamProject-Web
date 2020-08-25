@@ -42,7 +42,7 @@ function postMethod(){
         }else{
             alert('fail');
         }
-        req.open('POST', './getData.php', true);
+        req.open('POST', './post_write_page.php', true);
         req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         req.send();
     

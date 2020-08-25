@@ -6,6 +6,30 @@
 
 
 
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hotpink;
+}
+
+
+nav div>a{
+    font-size: 20px;
+    color: #1b1b1b;
+    font-weight: bolder;
+    margin-left: 2em; 
+}
+
+nav div>a:hover{
+    color: #669933;
+    text-decoration-line: none;
+}
+
+
+
+
+
 
 aside.left{
     float: left;
@@ -190,7 +214,19 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
     justify-content: space-between;
 }
 
+#prebtn, #nextbtn{
+    margin: 0;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    margin-top: 5em;
+}
 
+#prebtn:hover, #nextbtn:hover{
+    background-color: #669933;
+    opacity: 100%;
+    border-radius: 30px; 
+}
 
 
 #commu{
@@ -201,11 +237,11 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 }
 
 #more{
-    /* position: relative;
-    margin-left: 2000px; */
+    margin-left: 45em;
     border: 0;
     outline: 0;
     margin-bottom: 1.5em;
+    font-size: 2em;
     
 }
 
@@ -216,15 +252,19 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 .card{
     display: flex;
     justify-content: space-around;
-    margin-right: 2em;
-    margin-bottom: 5px
-    f
+    margin-right: 3em;
+    margin-bottom: 2em
+}
+
+.card{
+    box-shadow: 8px 8px 8px 8px grey;
 }
 
 section a:hover{
     opacity: 0.6;
     
 }
+
 
 section a:link{
     color: black;
