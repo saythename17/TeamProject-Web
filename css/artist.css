@@ -478,3 +478,34 @@ iframe{
     width: 100%;
     margin: 1em 0;
 }
+.video-list{
+    position: relative;
+    width: max-content;
+    height: max-content;
+    display: table-cell;
+    text-decoration: none;
+}
+.video-link{
+    border: #669933 1px solid;
+}
+
+.thumbnail:hover{
+    opacity: .3,
+}
+
+.video-list img{
+    position: relative;
+}
+.video-title{
+    display: none;
+    left: 250; top: 250;
+    vertical-align: middle;
+    margin-bottom: 9px;
+    text-align: center;
+}
+.video-list:hover .video-title{
+    display: absolute;
+}
+.video-link{
+    margin-right: 550px;
+}
