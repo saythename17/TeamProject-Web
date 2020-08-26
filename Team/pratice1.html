@@ -1,258 +1,39 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>매니지먼트숲</title>
-    <link rel='shortcut icon' href='http://www.msoopent.com/data/common/favicon.ico' />
-
-    <link rel="stylesheet" href="./css/company.css" type="text/css">
-  
+    <title>Document</title>
     <style>
-      *{
-        padding: 0px;
-        margin: 0px;
-      }
-      
-
-      #top{
-        display: flex;
-        justify-content: space-between;
-        margin-right: 30px;
-        font-family: sans-serif;
-        font-size: 20px;
-        color: #333;
-        text-decoration: none;
-        font-weight: bolder;
-        font-style: normal;
-      }
-      
-      #ch1{
-        color: #333;
-        text-decoration: none;
-        font-weight: bolder;
-        font-style: normal;
-        margin-right: 4em;
-      }
-
-      #ch2{
-        color: #333;
-        text-decoration: none;
-        font-weight: bolder;
-        font-style: normal;
-        margin-right: 4em;
-      }
-
-      #ch3{
-        color: #333;
-        text-decoration: none;
-        font-weight: bolder;
-        font-style: normal;
-      }
-
-      #icons{
-        text-align: right;
-        margin-top: 11px;
-        margin-right: 2.5%;
-      }
-
-      .a{
-        margin-left: 10px;
-      }
-      
-
-      #back{
-        display: flex;
-        height: 300px;
-        width: 100%;
-        background-repeat: unset;
-        color: white;
-        background-image: url(./img/soop.png);
-        background-position: center;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column; 
-      }
-
-      #span{
-        display: inline-block;
-        font-size: 0;
-        width: 92px; height: 3px;
-        background-color: #1b1b1b;
-        margin: left auto;
-        margin: right auto; 
-      }
-
-      .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: space-around;
-        text-decoration: none;
-      }
-
-      .side{
-        margin-left: auto;
-        margin-left: auto;
-
-        width: 500px;
-        height: 150px;
-        border-spacing: 10px;
-        border-collapse: collapse;
-        text-align: left;
-        /* margin-left: 400px; */
-        margin-top: 50px;
-        color: gray;
-        font-size: 14px;
-        flex-grow: 1;
-      }
-
-
-      #span2{
-        margin-top: 30px;
-        margin-right: 35px;
-        margin-left: 60px;
-        width: 0.5px;
-        height: 350px;
-        border-left: 1px solid gray ;
-        border-radius: 4px;
-        background-color: gray;
-        opacity: 0.3;
-    
-      }
-
-      .side2{
-        width: 600px;
-        height: 350px;
-        border-spacing: 20px;
-        border-collapse: collapse;
-        text-align: left;
-        margin-right: 380px;
-        margin-top: 25px;
-        color: #777777;
-        font-size: 15px;
-        flex-grow: 1;
-       
-
-      }
-
-      .side2 tr{
-        border-spacing: 0px;
-        line-height: 25px;
-      }
-
-
-
+body {
+  font-family: Helvetica;
+}
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 12px;
+	margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+  width: 10px;
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	/* font-size: 0px; */
+	/* line-height: 0px; */
+	/* margin: 0px 16px; */
+}
     </style>
+
 
   </head>
   <body>
-
-    <header class="imgs">
-
-      <p class="header">
-          <div id="icons">
-              <a href="" class="a"><img src="./img/fb.png"></a>
-              <a href="" class="a"><img src="./img/ins.png"></a>
-              <a href="" class="a"><img src="./img/you.png"> </a>
-              <a href="" class="a"> <img src="./img/n.png"></a>
-              <a href="" class="a"><img src="./img/v.png"></a>
-              <a href="" class="a"><img src="./img/n.t.png"></a>
-            </div>
-
-
-      </p>
-
-      <p>
-        <div id="top">
-          <img src="./img/soop.jpg.png">
-          <i style="margin-top: 20px;">
-            <a href="" id="ch1">COMPANY</a>
-            <a href="" id="ch2">ARTIST</a>
-            <a href="" id="ch3">COMMUNITY</a>
-         </i>
-        </div>
-      </p>
-
-    </header>
-   
-    <div id="back">
-      <h1>MANAGEMENT SOOP</h1>
-      <b>MANAGEMENT COMPANY SPECIALIZING IN PREFORMERS</b>
-    </div>
-
-  
-
-  <p style="text-align: center; margin-top: 60px;">
-    <span id="span">---</span>
-    <h1 style="text-align: center;">INTRODUCTION</h1>
-  </p>
-
-  
-
-  <article class="container">
-     <div>
-        <table class="side" width="100%">
-            <tr>
-              <td>회사명</td>
-              <td><strong>매니지먼트숲</strong></td>
-            </tr>
-      
-            <tr>
-              <td>설립일</td>
-              <td><strong> 2011년4월19일</strong></td>
-            </tr>
-      
-            <tr>
-              <td>대표이사</td>
-              <td><strong>김장균</strong></td>
-            </tr>
-      
-            <tr>
-              <td>주소</td>
-              <td><strong>서울특별시 강남구 학동로 50길27(논현동 242-35)</strong></td>
-            </tr>
-      
-            <tr>
-              <td>주요사업</td>
-              <td><strong>연예인 매니지먼트,제작</strong></td>
-            </tr>
-          </table>
-     </div>
-    
-
-    <p id="span2"></p>
-   
-    <div>
-        <table class="side2"> 
-            <tr> 
-              <td>
-                <strong>
-              매니지먼트 숲은 연기자 전문 매니지먼트 회사로 소속 연기자들이 보다 전문화되고 체계적인 시스템을 바탕으로 작품 및 연예활동을 할 수 있도록 집중적인 서포터를 진행하는데 주력할 것입니다.
-                </strong>
-              </td>
-            </tr>
-      
-            <tr>
-              <td>
-                <strong>
-                또한 오랜 실무경험을 통해 축적된 노하우로 소속 연기자들의 장점을 극대화 하고 개성을 부각시켜 대중에 한발 앞서서 호흡할 수 있도록 항상 노력하며 역량 있는 신인 연기자들의 지속적인 발굴과 육성을 통해 국내 시장은 물론 세계시장으로 뻗어나갈 예정입니다.
-                </strong>
-              </td>
-            </tr>
-      
-            <tr>
-              <td>
-                <strong>
-              매니지먼트 숲은 연기자, 매니저, 스태프 모두가 항상 신뢰하며 동고동락하는 파트너라는 인식과 함께 숲이라는 큰 울타리로 대중의 신뢰와 사랑을 받을 수 있도록 더 열심히, 더 성실히, 일해 나가며 울창하게 번창하는 매니지먼트 숲이 되겠습니다.
-                </strong>
-              </td>
-            </tr>
-          </table>
-    </div>
-    
-  </article>
-
-
+    <p>Some text<br />in a paragraph.</p>
+    <div class="hr-sect">CATEGORY</div>
+    <p>Some more text<br />in a paragraph.</p>
   </body>
 </html>
