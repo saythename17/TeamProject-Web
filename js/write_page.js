@@ -52,34 +52,82 @@ function sendData(){
 
             for(i=0; i<js_arr.length; i++){
                 //alert('bbb');
-                table.innerHTML += "<tr>";
-                table.innerHTML += "<td>";
-                table.innerHTML += js_arr[i].no;
-                table.innerHTML += "</td>";
+                // table.innerHTML += "<tr>";
+                // table.innerHTML += "<td>";
+                // table.innerHTML += js_arr[i].no;
+                // table.innerHTML += "</td>";
 
-                table.innerHTML += "<td>";
-                table.innerHTML += '<a href="./post.html?no='+js_arr[i].no+'">';
-                table.innerHTML += js_arr[i].title;
-                table.innerHTML += "</a>";
-                table.innerHTML += "</td>";
+                // table.innerHTML += "<td>";
+                // table.innerHTML += '<a href="./post.html?no='+js_arr[i].no+'">';
+                // table.innerHTML += js_arr[i].title;
+                // table.innerHTML += "</a>";
+                // table.innerHTML += "</td>";
 
-                table.innerHTML += "<td>";
-                table.innerHTML += js_arr[i].name;
-                table.innerHTML += "</td>";
+                // table.innerHTML += "<td>";
+                // table.innerHTML += js_arr[i].name;
+                // table.innerHTML += "</td>";
 
-                table.innerHTML += "<td>";
-                table.innerHTML += js_arr[i].date;
-                table.innerHTML += "</td>";
-                table.innerHTML += "</tr>";
-            }
+                // table.innerHTML += "<td>";
+                // table.innerHTML += js_arr[i].date;
+                // table.innerHTML += "</td>";
+                // table.innerHTML += "</tr>";
 
+                var tr = document.createElement('tr');
+
+                var td1 = document.createElement('td');
+                td1.innerText = js_arr[i].no;
+                var td2 = document.createElement('td');
+                td2.innerHTML = '<a href="./post.html?no='+js_arr[i].no+'">' + js_arr[i].title + '</a>';
+                var td3 = document.createElement('td');
+                td3.innerText = js_arr[i].name
+                var td4 = document.createElement('td');
+                td4.innerText = js_arr[i].date
+
+                tr.appendChild(td1);
+                tr.appendChild(td2);
+                tr.appendChild(td3);
+                tr.appendChild(td4);
+                table.appendChild(tr);
          
+            }
         }
     }
-
     req.open('GET', './getData.php', true);
     req.send();
 
+ }
+ 
+
+
+
+
+
+
+
+ function getDatafromLocal(){
+    //alert('getDatafromLocal 함수 실행');
+
+     var name= document.getElementById('name'); 
+    var title= document.getElementById('title');
+    //alert(title);
+    // var title= document.getElementById('msg');
+    // var name= document.getElementById('tag');
+
+     
+
+     var req= new XMLHttpRequest();
+     req.onreadystatechange= function(){
+         if(req.readyState==4 && req.status==200){
+             js_arr= JSON.parse(req.responseText);
+             alert(req.responseText);
+            //  var temp= location.href.split("=");
+            // name.innerHTML=js_arr[temp[1]].name
+     }
+
+     req.open('GET', './getData.php', true);
+     req.send();
+
+     
  }
     
 
