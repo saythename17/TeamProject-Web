@@ -247,17 +247,17 @@
             <!-- btn -->
             <div class="pagebtn">
                 
-                <svg id="before" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg id="pre" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                     <path fill-rule="evenodd" d="M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z"/>
                     <path fill-rule="evenodd" d="M11.5 8a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z"/>
                   </svg>
 
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
+                <button class="pageNum">1</button>
+                <button class="pageNum">2</button>
+                <button class="pageNum">3</button>
 
-                <svg id="after" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg id="next" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                     <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
                     <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
@@ -291,201 +291,147 @@
                     <span onclick="photo()" class="tab">photo</span>
                     <span onclick="video()" class="tab" style="color: #669933;">video</span> 
                 </h4>
-                <iframe id="video-frame" src="https://www.youtube.com/embed/xW71Vg9R5Bo" frameborder="0" 
+                <iframe id="video-frame" name="video-frame" src="https://www.youtube.com/embed/xW71Vg9R5Bo" frameborder="0" 
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen></iframe>
             </div>
 
-
             
-            <ul>
-                <svg id="pre" width="2em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-                  </svg>
+            <!-- --------------------------------------------------------------- --> 
+            
 
 
 
-                  <!-- <div class="slide_box" style="width: 100%; margin: auto; overflow-x: hidden;">
-                  <div class="slide_list clearfix" style="width: 2800px; transform: translate3d(-2000px, 0px, 0px); transition: all 300ms ease 0s;"> -->
-                <!-- slide3 -->
-                <div class="slide_content slide03">
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/IXGTHO1FpZE/mqdefault.jpg">
+
+                <div id="slider" class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <!-- <div style="display: flex; justify-content: space-evenly; width: 100%; border: 1px dotted rgb(130, 238, 233);"> -->
+                    <a class="video-list" href="https://www.youtube.com/embed/dDPyEC2DpRY" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/dDPyEC2DpRY/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">에피그램 2020S/S</b>
+                    </a>
+                    <a class="video-list" href="https://www.youtube.com/embed/MliZDZ7CSec" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/MliZDZ7CSec/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">(ENG)2020 숲 배우가 숲 배우에게 묻는다📣👂 '공유' 편</b>
+                    </a>
+                    <a class="video-list" href="https://www.youtube.com/embed/A8HNnO2RVvI" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/A8HNnO2RVvI/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">라 메르 기프트 필름</b>
+                    </a>
+                    <a class="video-list" href="https://www.youtube.com/embed/54loeesPfwA" target="video-frame">
+                            <img class="thumbnail" src="https://img.youtube.com/vi/54loeesPfwA/mqdefault.jpg">
                             <span class="darkmode"></span>
-                            <b class="video-title">당신의 4계절 공유를 골라주세요 ♥</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/qJJ-Oi66NFo/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">갑.분.춤이란 이런 것! 갑자기 리듬에 몸을 맡기는 댄싱머신 공유</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/CW-5DnoLhAE/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">[맥심 카누] 카누 SPRING 편 30초 -180307</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/Rajp3Gq9Igo/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title"> 멋짐 이라는게 대폭발 했다! (feat. 킥보드 공유)</b>
-                        </a>
-                    </li>
+                            <b class="video-title">비씨카드 [여유의혜택] 메이킹 + 공유 인터뷰</b>
+                    </a>
+                    
+                    <!-- </div> -->
                 </div>
-                <!-- slide3 -->
-
-                <!-- slide1 -->
-                <!-- <div class="slide_content slide01" style="width: 100%; display: flex; justify-content: center;">
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/PyU4KH6wDMM/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">Maxim KANU TVC Quality편</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/A8HNnO2RVvI/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">라 메르 기프트 필름</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/MliZDZ7CSec/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">(ENG)2020 숲 배우가 숲 배우에게 묻는다📣👂 '공유' 편</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/dDPyEC2DpRY/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">에피그램 2020S/S</b>
-                        </a>
-                    </li>
-                    </div> -->
-                    <!-- slide1 -->
-
-                    <!-- slide2 -->
-                <!-- <div class="slide_content slide02" style="width: 100%; display: flex; justify-content: center;">
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/Kcj6wRKYM5Q/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">숲포일러 2020 To Do List</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/V4qDYTcX4lI/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">[정유미/공유] '82년생 김지영' 포스터 현장 대공개!</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/U1Pl846UrgI/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">디스커버리 프리미엄 롱패딩, 레스터G</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/lHkHMe9cz1c/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">이것은 비하인드인가, A컷인가 ? (카누 메이킹☕)</b>
-                        </a>
-                    </li>
-                    </div> -->
-                    <!-- slide2 -->
-
-                    <!-- slide3 -->
-                <!-- <div class="slide_content slide03" style="width: 100%; display: flex; justify-content: center;">
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/IXGTHO1FpZE/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">당신의 4계절 공유를 골라주세요 ♥</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/qJJ-Oi66NFo/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">갑.분.춤이란 이런 것! 갑자기 리듬에 몸을 맡기는 댄싱머신 공유</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/CW-5DnoLhAE/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">[맥심 카누] 카누 SPRING 편 30초 -180307</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/Rajp3Gq9Igo/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title"> 멋짐 이라는게 대폭발 했다! (feat. 킥보드 공유)</b>
-                        </a>
-                    </li>
-                </div> -->
-                    <!-- slide3 -->
-
-                    <!-- slide1 -->
-                <!-- <div class="slide_content slide01" style="width: 100%; display: flex; justify-content: center;">
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/PyU4KH6wDMM/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">Maxim KANU TVC Quality편</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/A8HNnO2RVvI/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">라 메르 기프트 필름</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/MliZDZ7CSec/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">(ENG)2020 숲 배우가 숲 배우에게 묻는다📣👂 '공유' 편</b>
-                        </a>
-                    </li>
-                    <li class="video-link">
-                        <a class="video-list" href="" target="video-frame">
-                            <img class="thumbnail" src="https://img.youtube.com/vi/dDPyEC2DpRY/mqdefault.jpg">
-                            <span class="darkmode"></span>
-                            <b class="video-title">에피그램 2020S/S</b>
-                        </a>
-                    </li>
-                </div> -->
-                    <!-- slide1 -->
-                <!-- </div>
-            </div> -->
-            <!-- slide box -->
                 
+                <div class="mySlides fade">
+                    <a class="video-list" href="https://www.youtube.com/embed/Rajp3Gq9Igo" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/Rajp3Gq9Igo/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title"> 멋짐 이라는게 대폭발 했다! (feat. 킥보드 공유)</b>
+                    </a>
+                    <a class="video-list" href="https://www.youtube.com/embed/qJJ-Oi66NFo" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/qJJ-Oi66NFo/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">갑.분.춤이란 이런 것! 갑자기 리듬에 몸을 맡기는 댄싱머신 공유</b>
+                    </a>
+                    <a class="video-list" href="https://www.youtube.com/embed/CW-5DnoLhAE" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/CW-5DnoLhAE/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">[맥심 카누] 카누 SPRING 편 30초 -180307</b>
+                    </a>
+                    <a class="video-list" href="https://www.youtube.com/embed/M9pkGVle_Ds" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/M9pkGVle_Ds/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">시도 때도 없이 생각나는 매력 모음.zip 💝</b>
+                    </a>
+                    
+                </div>
+                
+                <div class="mySlides fade">
+                    <a class="video-list" href="https://www.youtube.com/embed/cRmgSrboiZI" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/cRmgSrboiZI/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">내가 알던 '공유' 😳?!!! (feat. 넘치는 끼💃🕺)</b>
+                    </a>
+                    <a class="video-list" href="https://www.youtube.com/embed/ShucvDAd6M4" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/ShucvDAd6M4/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">크리스마스 ASMR</b>
+                    </a>
+                    <a class="video-list" href="https://www.youtube.com/embed/lHkHMe9cz1c" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/lHkHMe9cz1c/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">이것은 비하인드인가, A컷인가 ? (카누 메이킹☕)</b>
+                    </a>
+                    <a class="video-list" href="https://www.youtube.com/embed/IXGTHO1FpZE" target="video-frame">
+                        <img class="thumbnail" src="https://img.youtube.com/vi/IXGTHO1FpZE/mqdefault.jpg">
+                        <span class="darkmode"></span>
+                        <b class="video-title">당신의 4계절 공유를 골라주세요 ♥</b>
+                    </a>
+                </div>
+                
+                <a class="prevB" onclick="plusSlides(-1)">
+                    <svg id="pre" width="2em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                      </svg>
+                </a>
+                <a class="nextB" onclick="plusSlides(1)">
+                    <svg id="next" width="2em"viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                </a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                
+                <!-- ------------------------------------------------------ -->
+                <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "flex"; 
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
 
 
 
-
-                <svg id="next" width="2em"viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-            </ul>
-            
-
-            <div style="border-bottom: 1px solid #E5E5E5;;"></div>
+            <div style="border-bottom: 1px solid #E5E5E5; margin-top: 2em;"></div>
 
 
             

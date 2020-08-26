@@ -11,7 +11,14 @@
     "etc":"국세청 홍보대사(2014)<br>유니세프 한국위원회 아동권리협약대표(2013~)",
     "mainImg":"http://www.msoopent.com/data/file/artist/S67307161_3.jpg",
     "fancafe":"http://cafe.daum.net/gongyoo",
-    "sns":"https://www.instagram.com/accounts/login/?next=/gongyoo79/"
+    "sns":"https://www.instagram.com/accounts/login/?next=/gongyoo79/",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/xW71Vg9R5Bo",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
     
@@ -28,7 +35,14 @@
     "etc":"연극-리타 Educating Rita(2014~2015)",
     "mainImg":"http://www.msoopent.com/data/file/artist/S89609493_P2.jpg",
     "fancafe":"http://cafe.daum.net/kkonghyojin?t__nil_cafemy=item",
-    "sns":"https://www.instagram.com/rovvxhyo"
+    "sns":"https://www.instagram.com/rovvxhyo",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/uquZRKlT5ng",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -45,10 +59,18 @@
     "etc":"연극-헤드윅(2011), 아마데우스(2018)<br>음악-밴드 월러스 활동 (2011, 2014)",
     "mainImg":"http://www.msoopent.com/data/file/artist/S35461561_3.jpg",
     "fancafe":"https://cafe.naver.com/fanjaeuck",
-    "sns":"https://www.instagram.com/jaeuck.kim"
+    "sns":"https://www.instagram.com/jaeuck.kim",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/JGJv-kiYsSI",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
+    
     },
 
-
+    
     {"name":"서현진",
     "birthday":"(1985. 2. 27 )",
     "nameunder":"SEO HYUN-JIN",
@@ -61,7 +83,14 @@
     "etc":"밀크 1집 ‘With freshness’(2001)<br>복숭아 나무 OST-십년이 백년이 지난 후에<br>제왕의 딸, 수백향 OST Part2-정읍사<br>식샤를 합시다2 OST Part3-UP&DOWN<br>또 오해영 OST Part3-사랑이 뭔데<br>뮤직비디오- 서영은 <그리움이 내린 나무(2009)><br>뮤지컬- <사운드 오브 뮤직(2006)> <궁(2010)> <신데렐라(2015)>",
     "mainImg":"http://www.msoopent.com/data/file/artist/S59542031_3.jpg",
     "fancafe":"https://www.instagram.com/jinius_shj",
-    "sns":"https://mobile.twitter.com/jini26991"
+    "sns":"https://mobile.twitter.com/jini26991",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/IZe7CzZw47c",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -78,7 +107,14 @@
     "etc":"연극 - 아트(2020)<br>음악- Love You Forever <영화 허밍 OST (2008)><br>뮤직비디오 - g.o.d <보통날(2004)><br>케이윌 - <그립고 그립고 그립다(2009)>",
     "mainImg":"http://www.msoopent.com/data/file/artist/S51477494_3.jpg",
     "fancafe":"https://m.cafe.daum.net/leechunhee",
-    "sns":"https://www.instagram.com/chuny012/"
+    "sns":"https://www.instagram.com/chuny012/",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/dqtnfFI_b84",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -94,11 +130,18 @@
     "etc":"연극 - 리타 길들이기(1997) 가극 - 눈물의 여왕(1998)<br>뮤직비디오 - The Name - <The Name(2002)><br>음악 - 너는 내 운명 OST - <You are my sunshine(2005)>",
     "mainImg":"http://www.msoopent.com/data/file/artist/S91823270_P2.jpg",
     "fancafe":"#",
-    "sns":"#"
+    "sns":"#",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/e6zrG1279zs",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
-
+    
     {"name":"정유미",
     "birthday":"(1983. 1. 18)",
     "nameunder":"JUNG YU-MI",
@@ -111,7 +154,14 @@
     "etc":"-",
     "mainImg":"http://www.msoopent.com/data/file/artist/S7579309_P2.jpg",
     "fancafe":"http://cafe.daum.net/youmesarangni",
-    "sns":"https://www.instagram.com/YUM_YUM/"
+    "sns":"https://www.instagram.com/YUM_YUM/",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/wdKX_rhiAEU",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -128,7 +178,14 @@
     "etc":"뮤직비디오 - 태일(블락비) <흔들린다(2015)>",
     "mainImg":"http://www.msoopent.com/data/file/artist/S93933641_3.jpg",
     "fancafe":"https://cafe.naver.com/19950917",
-    "sns":"https://www.instagram.com/hyuniiiiiii_95917/"
+    "sns":"https://www.instagram.com/hyuniiiiiii_95917/",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/D8PBZGjeMi8",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -145,7 +202,14 @@
     "etc":"연극 - 키사라기 미키짱(2012-2013)<br>뮤직비디오 - 먼데이키즈 <그대여 (2013)>",
     "mainImg":"http://www.msoopent.com/data/file/artist/S49752272_P2.jpg",
     "fancafe":"http://cafe.daum.net/minsmate",
-    "sns":"https://www.instagram.com/m5577881/"
+    "sns":"https://www.instagram.com/m5577881/",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/V8lUX_j0sQ4",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -163,7 +227,14 @@
     "etc":"-",
     "mainImg":"http://www.msoopent.com/data/file/artist/S05660541_3.jpg",
     "fancafe":"http://cafe.daum.net/LEEJJ1020",
-    "sns":"https://www.instagram.com/leejj1020/"
+    "sns":"https://www.instagram.com/leejj1020/",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/watch?v=eYxe-yNmcI8",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -180,7 +251,14 @@
     "etc":"광고 - 설화수 튜토리얼(2016), 설화수(2019), 아큐브(2019)",
     "mainImg":"http://www.msoopent.com/data/file/artist/S65783091_3.jpg",
     "fancafe":"www.instagram.com/soo146/",
-    "sns":"www.instagram.com/soo146/"
+    "sns":"www.instagram.com/soo146/",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/dHPYGz8Gk9o",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -198,7 +276,14 @@
     "etc":"-",
     "mainImg":"http://www.msoopent.com/data/file/artist/S07962705_P2.jpg",
     "fancafe":"https://blog.naver.com/yancu32/221417800109",
-    "sns":"https://m.post.naver.com/viewer/postView.nhn?volumeNo=7013543&memberNo=22903361"
+    "sns":"https://m.post.naver.com/viewer/postView.nhn?volumeNo=7013543&memberNo=22903361",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/SD3GPGfH1eY",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -214,9 +299,16 @@
     "tv":"파이널어드벤처(MBC, 2013)",
     "awards":"한국영화기자협회 '제8회 올해의 영화상' 신인남우상(2017)<br>제53회 대종상 영화제 신인남자배우상(2016)",
     "etc":"-",
-    "mainImg":"http://www.msoopent.com/data/file/artist/S89609493_P2.jpg",
+    "mainImg":"http://www.msoopent.com/data/file/artist/S31722005_3.jpg",
     "fancafe":"http://cafe.daum.net/garam93",
-    "sns":"http://cafe.daum.net/garam93"
+    "sns":"http://cafe.daum.net/garam93",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/WzcComDaruY",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -234,7 +326,14 @@
     "etc":"뮤직비디오 - Cheeze <어떻게 생각해(2016)><br>29CM X 전주국제영화제 야외상영홍보영상(2015)",
     "mainImg":"http://www.msoopent.com/data/file/artist/S01825345_3.jpg",
     "fancafe":"http://cafe.daum.net/sonnyangel2019",
-    "sns":"https://namu.wiki/w/%EC%A0%84%EC%86%8C%EB%8B%88"
+    "sns":"https://namu.wiki/w/%EC%A0%84%EC%86%8C%EB%8B%88",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/6ZrFaFzRf2I",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -252,7 +351,14 @@
     "etc":"-",
     "mainImg":"http://www.msoopent.com/data/file/artist/S45614969_3.jpg",
     "fancafe":"#",
-    "sns":"#"
+    "sns":"#",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/dHPYGz8Gk9o",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -270,7 +376,14 @@
     "etc":"뮤직비디오 - 아이유  ‘나의 옛날이야기’(2014)><br>뮤직비디오 - DAY6  ‘Congratulations’(2015)<br>뮤직비디오 - 임슬옹 ‘그 순간’(2017)",
     "mainImg":"http://www.msoopent.com/data/file/artist/S87930897_P2.jpg",
     "fancafe":"http://cafe.daum.net/choiw",
-    "sns":"https://www.instagram.com/dntlrdl"
+    "sns":"https://www.instagram.com/dntlrdl",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/xnKs1FRhQxs",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -288,7 +401,14 @@
     "etc":"Miss A - Bad But Good, Step Up(2010) 드림하이 OST - Part.4(2011)<br>Miss A - Love Alone, 1집-A Class(2011) 나도 꽃 OST - Part.2(2011)<br>드림하이2 OST - Part.2(2012) Miss A - Touch(2012)<br>빅 OST - '그래도 사랑해'(2012) 박진영,택연,장우영,수지 - Classic(2012)<br>Miss A - Independent Women pt.Ⅲ(2012)<br>윤덕원,수지 - Moment(2012) 구가의 서 OST - Part.5(2013)<br>Miss A - 2집 Hush(2013) Miss A - Colors(2015)<br>너를 사랑한 시간 OST - Part.5(2015) 수지,백현 - Dream(2016)<br>함부로 애틋하게 OST - Part.1, Part.15(2016)<br>수지 - Yes? No?(2017) 박원,수지 - 기다리지 말아요(2017)<br>당신이 잠든사이에 OST - Part.4, Part.13(2017)<br>수지-Faces of Love, 잘자 내 몫까지(2018)",
     "mainImg":"http://www.msoopent.com/data/file/artist/S61703024_3.jpg",
     "fancafe":"http://cafe.daum.net/baesuzy941010",
-    "sns":"https://www.instagram.com/skuukzky/"
+    "sns":"https://www.instagram.com/skuukzky/",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/pQNGvv5DW9o",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -306,7 +426,14 @@
     "etc":"뮤직비디오 - 악동뮤지션 <200%, Give Love(2014)><br>1415 <흰눈이 오면(2018)>",
     "mainImg":"http://www.msoopent.com/data/file/artist/S15757891_3.jpg",
     "fancafe":"http://cafe.daum.net/njh0222",
-    "sns":"https://www.instagram.com/skawngur/"
+    "sns":"https://www.instagram.com/skawngur/",
+    "photos1":["a","b","c"],
+    "photos2":["a","b","c"],
+    "photos3":["a","b","c"],
+    "mainVideo":"https://www.youtube.com/embed/QLiAdBBAVxI",
+    "videos1":["","","",""],
+    "videos2":["","","",""],
+    "videos3":["","","",""]
     },
 
 
@@ -323,7 +450,14 @@
         "etc":"뮤직비디오 - 서현 <Don’t Say No (2017)><br>멜로망스 <인사 (2019)><br>영국 보그 선정 ‘2017 전 세계 핫 보이즈 50’",
         "mainImg":"http://www.msoopent.com/data/file/artist/S39564043_3.jpg",
         "fancafe":"#",
-        "sns":"https://www.instagram.com/jsunghoon/"
+        "sns":"https://www.instagram.com/jsunghoon/",
+        "photos1":["a","b","c"],
+        "photos2":["a","b","c"],
+        "photos3":["a","b","c"],
+        "mainVideo":"https://www.youtube.com/embed/Lm2C2KRww5M",
+        "videos1":["","","",""],
+        "videos2":["","","",""],
+        "videos3":["","","",""]
         }
 
     
