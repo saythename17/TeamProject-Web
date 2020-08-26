@@ -645,3 +645,13 @@ iframe{
 
 
 
+
+
+/* slide */
+.slide_content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 160px;
+    border: #669933 1px solid;
+}
