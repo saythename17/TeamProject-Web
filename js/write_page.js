@@ -7,16 +7,22 @@
 
 
 
-function postMethod(){
+function sendData(){
     alert('확인을 누르셨습니다.');
 
-    var name= document.getElementById('name').nodeValue;
-    var email= document.getElementById('email').nodeValue;
-    var title= document.getElementById('title').nodeValue;
-    var msg= document.getElementById('msg').nodeValue;
+    var name= document.getElementById('name');
+    var email= document.getElementById('email');
+    var title= document.getElementById('title');
+    var msg= document.getElementById('msg');
     var file= document.getElementById('file').src;
 
     var req= new XMLHttpRequest();
+
+    req.onreadystatechange=function(){
+        //alert(req.responseText);  //4번째까지 응답받았을때/ 성공했을때 실행됨
+        //php에서 받아온 데이터가 responseText에 저장
+
+    }
     
     req.open('POST', './post_write_page.php', true);
     req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -30,58 +36,98 @@ function postMethod(){
 
 
 
+//fanLetter_page 목록에 받아지는 데이터
+ function loadData(){
 
-//  function postData(){
-//      //alert();
-//         var req= new XMLHttpRequest();
-//         req.onreadystatechange= function(){
-//         if(req.readyState==4 && req.status==200){
+    var req= new XMLHttpRequest();
+    req.onreadystatechange= function(){       
+        if(req.readyState==4 && req.status==200){
+            //alert(req.responseText);    //4번째까지 응답받았을때/ 성공했을때 실행됨
+            js_arr=JSON.parse(req.responseText);   //JSON.parse()를 사용하여 객체로 변환  //이미 배열
+            //document.getElementById("title").innerHTML= 
 
-//             //alert(req.responseText);
-//             alert('aa'); 
-//         }else{
-//             alert('fail');
-//         }
-//         req.open('POST', './getData.php', true);
-//         req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-//         req.send();
+            
+            //alert(js_arr.length);
+            var table=document.getElementById('aa');
+
+            for(i=0; i<js_arr.length; i++){
+                //alert('bbb');
+                table.innerHTML += "<tr>";
+                table.innerHTML += "<td>";
+                table.innerHTML += js_arr[i].no;
+                table.innerHTML += "</td>";
+
+                table.innerHTML += "<td>";
+                table.innerHTML += '<a href="./post.html?no='+js_arr[i].no+'">';
+                table.innerHTML += js_arr[i].title;
+                table.innerHTML += "</a>";
+                table.innerHTML += "</td>";
+
+                table.innerHTML += "<td>";
+                table.innerHTML += js_arr[i].name;
+                table.innerHTML += "</td>";
+
+                table.innerHTML += "<td>";
+                table.innerHTML += js_arr[i].date;
+                table.innerHTML += "</td>";
+                table.innerHTML += "</tr>";
+            }
+
+         
+        }
+    }
+
+    req.open('GET', './getData.php', true);
+    req.send();
+
+ }
     
-//     }
+
+
+
+
+// function printData(){
+ 
+//     var name= $('#name').val();
+//     var title= $('#title').val();
+//     //var file= $('#file').val();
+//     var msg= $('#msg').val();
+//     var tag= $('#tag').val();
+
+//     var data= "name="+name+"&title="+title+"&file="+file+"&msg="+msg+"$tag="+tag;
+//     var data_name="name="+name;
+
+//     $.ajax({
+//         type:"POST",
+//         url:"./getData.php",
+//         data: data,
+//         success: function(data_name){
+//             var s= JSON.parse(data);
+//             alert(s[name]);
+//             //$('#name').html(data_name);
+//             // $('#msg').html(data.title);
+//             // $('#msg').html(data.msg);
+//             // $('#tag').html(data.tag);
+//         }, 
+//         error: function(error){
+//             alert(error);
+//         }
+//     })
+
 // }
 
 
-function postData(){
 
-    alert('hello');
+    // $('#btn_ok').click(function(){
+    //     var name= $('#name').val();
+        
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "./getData.php",
+    //         data: data,
+    //         sucess: function(){
+    //            $('#name').html(data);
+    //         } 
+    //     })
+    // });
 
-    var name= $('#name').val();
-    var title= $('#title').val();
-    //var file= $('#file').val();
-    var msg= $('#msg').val();
-    var tag= $('#tag').val();
-
-    var data= "name="+name+"&title="+title+"&file="+file+"&msg="+msg+"$tag="+tag;
-    var data_name="name="+name;
-
-    $.ajax({
-        type:"POST",
-        url:"./getData.php",
-        data: data,
-        success: function(data_name){
-            $('#name').html(data_name);
-            $('#msg').html(data.title);
-            $('#msg').html(data.msg);
-            $('#tag').html(data.tag);
-        }
-    })
-
-}
-
-
-
-    
-
-
-
-
-    
