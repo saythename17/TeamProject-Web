@@ -37,10 +37,15 @@ var artistInfo=a=>{
     req.onreadystatechange=()=>{
         if(req.readyState==4 && req.status == 200){
             var artists=JSON.parse(req.responseText)
+
             
 
             document.getElementById('star').innerHTML = ""+artists[a].name
+            document.getElementById('star2').innerHTML = ""+artists[a].name
+            document.getElementById('star3').innerHTML = ""+artists[a].name
             document.getElementById('nameunder').innerHTML = ""+artists[a].nameunder
+            document.getElementById('sidename').innerHTML = ""+artists[a].nameunder
+            document.getElementById('sidename2').innerHTML = ""+artists[a].nameunder
             document.getElementById('height').innerHTML = ""+artists[a].height
             document.getElementById('debut').innerHTML = ""+artists[a].debut
             document.getElementById('movie').innerHTML = ""+artists[a].movie
@@ -71,9 +76,8 @@ var profile=()=>{
     document.getElementById('photo').style.display = "none"
     document.getElementById('video').style.display = "none"
     var tabmenu=document.getElementsByClassName('tab')
-    for(var t in tabmenu){
-        if(t==0) tabmenu[t].style.color='#663399'
-        tabmenu[t].style.color='#888'
+    for(var t=0;t<tabmenu.length;t++){
+        if(t==0) tabmenu[t].style.color='#669933'
     }
 }
 var photo=()=>{
@@ -82,8 +86,7 @@ var photo=()=>{
     document.getElementById('video').style.display = "none"
     var tabmenu=document.getElementsByClassName('tab')
     for(var t in tabmenu){
-        if(t==0) tabmenu[t].style.color='#663399'
-        tabmenu[t].style.color='#888'
+        if(t==4) tabmenu[t].style.color='#669933'
     }
 }
 var video=()=>{
@@ -92,8 +95,7 @@ var video=()=>{
     document.getElementById('video').style.display = "flex"
     var tabmenu=document.getElementsByClassName('tab')
     for(var t in tabmenu){
-        if(t==0) tabmenu[t].style.color='#663399'
-        tabmenu[t].style.color='#888'
+        if(t==8) tabmenu[t].style.color='#669933'
     }
 }
 

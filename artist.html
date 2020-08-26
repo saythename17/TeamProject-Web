@@ -93,7 +93,7 @@
 
             <aside class="right">
                 <div id="info-top">
-                    <h1 id="name"><span id="star">공유</span><span id="birth">(1979.7.10)</span></h1>
+                    <h1 class="name"><span id="star">공유</span><span id="birth">(1979.7.10)</span></h1>
                     <h4>
                     <a class="lang" href="">kor</a>
                         / 
@@ -106,7 +106,7 @@
                 <div id="info-right">
                     <h4 id="nameunder" style="width: 50%;">gong yoo</h4> 
                     <h4 id="category" style="width: 67%; text-align: end;">
-                        <span onclick="profile()" class="tab">profile</span>
+                        <span onclick="profile()" class="tab" style="color: #669933;">profile</span>
                         <span onclick="photo()" class="tab">photo</span>
                         <span onclick="video()" class="tab">video</span> 
                     </h4>
@@ -174,7 +174,7 @@
         <!-- photo --> 
         <article id="photo" style="display: flex;">
             <div id="photo-top">
-                <h1 id="name2"><span id="star2">공유</span><span class="sidename">gong yoo</span></h1>
+                <h1 class="name"><span id="star2">공유</span><span class="sidename">gong yoo</span></h1>
                 <h4>
                 <a class="lang" href="">kor</a>
                     / 
@@ -187,13 +187,10 @@
             <div>
                 <h4 id="category2" style="width: 100%; text-align: end;">
                     <span onclick="profile()" class="tab">profile</span>
-                    <span onclick="photo()" class="tab">photo</span>
+                    <span onclick="photo()" class="tab" style="color: #669933;">photo</span>
                     <span onclick="video()" class="tab">video</span> 
                 </h4>
             </div>
-            <iframe src="https://www.youtube.com/embed/xW71Vg9R5Bo" frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
         </article>
         <!-- photo -->
 
@@ -205,7 +202,7 @@
         <!-- video -->
         <article id="video" style="display: none;">
             <div id="video-top">
-                <h1 id="name3"><span id="star3">공유</span><span class="sidename">gong yoo</span></h1>
+                <h1 class="name"><span id="star3">공유</span><span class="sidename2">gong yoo</span></h1>
                 <h4>
                 <a class="lang" href="">kor</a>
                     / 
@@ -219,12 +216,13 @@
                 <h4 id="category3" style="width: 100%; text-align: end;">
                     <span onclick="profile()" class="tab">profile</span>
                     <span onclick="photo()" class="tab">photo</span>
-                    <span onclick="video()" class="tab">video</span> 
+                    <span onclick="video()" class="tab" style="color: #669933;">video</span> 
                 </h4>
+                <iframe src="https://www.youtube.com/embed/xW71Vg9R5Bo" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
             </div>
-            <iframe src="https://www.youtube.com/embed/xW71Vg9R5Bo" frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
+            
         </article>
         <!-- video -->
 </div>
