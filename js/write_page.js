@@ -61,13 +61,14 @@ function postData(){
     var tag= $('#tag').val();
 
     var data= "name="+name+"&title="+title+"&file="+file+"&msg="+msg+"$tag="+tag;
+    var data_name="name="+name;
 
     $.ajax({
         type:"POST",
         url:"./getData.php",
         data: data,
-        success: function(data){
-            $('#name').html(data.name);
+        success: function(data_name){
+            $('#name').html(data_name);
             $('#msg').html(data.title);
             $('#msg').html(data.msg);
             $('#tag').html(data.tag);
