@@ -16,9 +16,9 @@ body{
     margin-left: 10px;
 }
 #logo{
-    width: 272px;
-    margin-top: -1.2%;
-    margin-left: 0.8%;
+    display: block;
+    text-align: center;
+    margin-left: 1.5em;
 }
 #top{
     display: flex;
@@ -33,7 +33,7 @@ body{
 
 
 i{
-    margin-right: 1%;
+    margin-right: 2em;
 }
 .menu{
     margin-left: 2.5em;
@@ -115,11 +115,11 @@ i{
 }
 #actor{
     text-align: start;
-    width: 75%;
+    width: 70%;
     display: flex;
 }
 .main{
-    width: 40%;
+    width: 45%;
     margin-right: 2em;
 }
 .right{
@@ -164,7 +164,7 @@ ul{
     font-weight: bold;
     -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
-    transition: .8s;
+    transition: 1.5s;
   }
 
 
@@ -297,8 +297,8 @@ ul{
     font-size: 15px;
     font-weight: 500;    
     text-decoration: none;
+    padding: 0 8px;
 }
-.tab:hover,#category .tab:hover,#category2 .tab:hover,
 #info-top a:hover,#photo-top a:hover,#video-top a:hover{
     color: #669933;
 }
@@ -306,8 +306,9 @@ ul{
     background-color: #669933;
     background-color: rgba(100, 134, 90, 0.26);
     border-radius: 8px;
-    padding: 0 8px;
     border-color: rgba(100, 134, 90, 0.26);
+    /* transform: rotate(360deg); */
+    transition: width 3s, height 3s, background-color 2s, transform 1s;
 }
 
 
@@ -371,7 +372,7 @@ ul{
 }
 #info-work ul{
     height: 400px;
-    overflow: scroll;
+    overflow: auto;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -457,7 +458,7 @@ ul{
     width: 75%;
     flex-flow: column;
 }
-.sidename{
+.sidename,.sidename2{
     color: #999;
     font-weight: 600;
     font-size: .5em;
@@ -474,8 +475,115 @@ ul{
 #photo-top *,.tab *{
     display: inline-block;
 }
+#category2,#category3{
+    margin-top: .5em;
+}
+.imgrow{
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+.imgrow *{
+    display: inline-block;
+    width: 100%;
+}
+.imgrow a{
+    max-width: 50%; 
+    height: 350px;
+    border-radius: 1.5em;
+    overflow: hidden;
+    margin: 0 .5em;
+    position:relative;
+}
+.photolist{
+    position: absolute;
+    margin: auto; 
+    min-height: 100%;
+    min-width: 200%;
+
+    /* For the following settings we set 100%, but it can be higher if needed 
+    See the answer's update */
+    width: 100px; 
+    left: 50%; 
+    transform: translate(-50%, 0); 
+    position: absolute;
+
+    
+    object-fit: fill;
+}
+.imgrow a:hover{
+    color: aliceblue;
+    opacity: 30%;
+}
+.pagebtn{
+    display: flex;
+    justify-content: center;
+    justify-items: center; 
+    margin-top: 5em;  
+}
+
+#img-end{
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 2em;
+}
+
+.pagebtn *{
+    margin: 0 1em;
+    color: #333;
+}
+#before,#after{
+    border-radius: 1em;
+    width: 2em;
+}
+#before:hover,#after:hover{
+    background-color: rgba(110, 170, 60, 0.5);
+}
+
+button{
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    border-radius: 80%;
+    font-size: 1.5em;
+    cursor: default;
+    border-style: none;
+    text-rendering: auto;
+    border: none;
+    outline:0;
+}
+button:hover{
+    color: #669933;
+}
+button::-moz-focus-inner{
+    border: none;
+    outline:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#video ul{
+    border: 1px dotted dodgerblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* video */
 iframe{
     width: 100%;
+    height: 520px;
     margin: 1em 0;
 }
 .video-list{
@@ -485,27 +593,43 @@ iframe{
     display: table-cell;
     text-decoration: none;
 }
-.video-link{
-    border: #669933 1px solid;
+.video-list{
+    background-color: fuchsia;
+    width: 280px;
+    height: 160px;
 }
 
-.thumbnail:hover{
+.video-list:hover *{
     opacity: .3,
 }
 
-.video-list img{
-    position: relative;
+.video-list img,.darkmode{
+    position: absolute;
+    width: 280px;
+    height: 160px;
+
 }
 .video-title{
     display: none;
-    left: 250; top: 250;
     vertical-align: middle;
     margin-bottom: 9px;
+    width: 280px;
+    vertical-align: middle;
     text-align: center;
+    font-family: sans-serif;
+}
+.video-list:hover .darkmode{
+    background-color: rgba(0, 0, 0, 0.705);
 }
 .video-list:hover .video-title{
-    display: absolute;
+    display: table-cell;
+    position: absolute;
+    top: 70px;
+    color: white;
 }
-.video-link{
-    margin-right: 550px;
+
+.mainimage{
+    width: 100%;
+    height: 500px;
 }
+

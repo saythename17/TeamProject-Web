@@ -13,23 +13,6 @@
 
 
 var artistInfo=a=>{
-    // alert("함수발동!")
-    // var len=document.getElementsByClassName('ccc')
-    // for(var i=0;i<len.length;i++){
-    //     var list=document.getElementsByClassName('ccc')[i]
-    //     list.onmouseover=()=>{
-    //         list.style.color="#669933"
-    //         list.style.fontWeight="bold"
-    //     }
-    //     if(i==a){
-    //         list.style.color="#669933"
-    //         list.style.fontWeight="bold"
-            
-    //     }else{
-    //         list.style.color="#666"
-    //         list.style.fontWeight="normal"
-    //     }
-    // }
     
     
     var req=new XMLHttpRequest()
@@ -44,8 +27,8 @@ var artistInfo=a=>{
             document.getElementById('star2').innerHTML = ""+artists[a].name
             document.getElementById('star3').innerHTML = ""+artists[a].name
             document.getElementById('nameunder').innerHTML = ""+artists[a].nameunder
-            document.getElementById('sidename').innerHTML = ""+artists[a].nameunder
-            document.getElementById('sidename2').innerHTML = ""+artists[a].nameunder
+            document.getElementById('nameEng').innerHTML = ""+artists[a].nameunder
+            document.getElementById('nameEnp').innerHTML = ""+artists[a].nameunder
             document.getElementById('height').innerHTML = ""+artists[a].height
             document.getElementById('debut').innerHTML = ""+artists[a].debut
             document.getElementById('movie').innerHTML = ""+artists[a].movie
@@ -102,3 +85,19 @@ var video=()=>{
 
 
 
+// function tabsHandler(index) {
+//     return function tabClickEvent() {
+//         var title=document.getElementsByClassName('video-title')[index]
+//         for(var i in title){
+//             title[i].style.display ="table-cell"
+//         }
+//         // title[i].style.display = "table-cell"
+//     };
+// }
+
+// var tabs = document.getElementsByClassName('thumbnail')
+// var i;
+
+// for (i = 0; i < tabs.length; i += 1) {
+//     tabs[i].onmouseover = tabsHandler(i);
+// }
