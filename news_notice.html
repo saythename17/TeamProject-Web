@@ -11,6 +11,40 @@
     <link rel="stylesheet" href="./news_notice.css">
 
 
+    <style>
+        @media screen and (max-width:600px) {
+                /* .container, .navbar{
+                    flex-direction: column;
+                } */
+                #nav{
+                    display: none;
+                }
+
+                #logo{
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+                #head_icon{text-align: left;}
+        } 
+        
+        
+
+
+        /* font */
+        @font-face{
+        font-family: "light";
+        src: url(./font/NotoSans-Light.ttf);   
+        }
+
+        @font-face{
+            font-family: "regular";
+            src: url(./font/NotoSans-Regular.ttf);   
+        }
+    </style>
+
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -22,6 +56,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
@@ -43,7 +78,7 @@
                 <img src="./img/soop.jpg.png" alt="soop_logo" id="logo">
                 
 
-                <div>
+                <div id="nav">
                     <a class="a" href="">COMPANY</a>
                     <a class="a" href="">ARTIST</a>
                     <a class="a" href="">COMMUNITY</a>
@@ -59,8 +94,8 @@
 
 
     <div id="container">
-        <h1>MANAGEMENT SOOP</h1>
-        <P>MANAGEMENT COMPANY SPECIALIZING IN PREFORMERS</P>
+        <h1 id="t1">MANAGEMENT SOOP</h1>
+        <P id="t2">MANAGEMENT COMPANY SPECIALIZING IN PREFORMERS</P>
     </div>
 
 
@@ -68,7 +103,7 @@
 
     <div class="news">
         <span id="line">----</span>
-        <h3 id="h3">NEWS&NOTICE</h3>
+        <h3 id="title">NEWS&NOTICE</h3>
     </div>
 
 

@@ -5,8 +5,17 @@ body{
 
 
 #head_icon{
+    size: 24px;
+    margin-top: 1em;
     text-align: right;
-    
+    margin-top: 11px;
+    margin-right: 2.5%;    
+}
+
+#logo{
+    width: 272px;
+    margin-top: -1.2%;
+    margin-left: 0.8%;
 }
 
 
@@ -16,13 +25,27 @@ body{
     display: flex;
 }
 
+#nav{
+    margin-left: 2.5em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-right: 2em;   
+}
+
 
 .a{
+    text-decoration-line: none;
+    color: #333;
+}
+
+
+/* .a{
     font-size: 20px;
     color: #1b1b1b;
     font-weight: bolder;
     margin-left: 2em; 
-}
+} */
 
 .a:hover{
     color: #669933;
@@ -50,6 +73,18 @@ body{
 
 
 
+#t1{
+    font-family: "regular", serif;
+    font-size: 38px;
+    margin-bottom: 2px;}
+#t2{
+    font-family: "regular", serif;
+    font-size: 14px;
+    margin-top: 0px;}
+
+
+
+
 
 #line{
     position: relative;
@@ -61,10 +96,14 @@ body{
 }
 
 
-#h3{
-    margin-top: 0.4em;
+#title{
+    /*margin-top: 0.4em;*/
+    font-size: 30px;
+    font-family: "regular", serif;
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
 }
-
 
 
 .news{
@@ -84,7 +123,7 @@ body{
 
 .nav_link{
     margin: 15px;
-    
+    font-family: "regular", serif;
 }
 
 #link:hover{
@@ -128,6 +167,11 @@ body{
     color: #669933;
     text-decoration-line: none;
 }
+
+#title{
+    color: #1b1b1b;
+}
+
 
 
 

@@ -9,8 +9,7 @@ body{
     margin-top: 1em;
     text-align: right;
     margin-top: 11px;
-    margin-right: 2.5%;
-    
+    margin-right: 2.5%;   
 }
 
 #logo{
@@ -36,6 +35,7 @@ body{
 
 .a{
     text-decoration-line: none;
+    color: #333;
 }
 
 
@@ -81,9 +81,14 @@ body{
 
 
 
-#t1{font-size: 35px;
+#t1{
+    font-family: "light", serif;
+    font-size: 38px;
     margin-bottom: 2px;}
-#t2{margin-top: 0px;}
+#t2{
+    font-family: "regular", serif;
+    font-size: 14px;
+    margin-top: 0px;}
 
 
 
@@ -102,6 +107,7 @@ body{
 #title{
     /*margin-top: 0.4em;*/
     font-size: 30px;
+    font-family: "regular", serif;
     color: #333;
     font-weight: 500;
     margin-top: 12px;
@@ -130,7 +136,8 @@ body{
 
 .nav_link{
     margin: 15px;
-    font-size: 30px;
+    font-size: 16px;
+    font-family: "regular", serif;
     color: #333;
     font-weight: 500;
     margin-top: 12px;
@@ -144,10 +151,12 @@ body{
 
 #link_all{
     color: #669933;
+    text-decoration-line: none;
 }
 
 #link{
     color: #1b1b1b;
+    text-decoration-line: none;
 }
 
 .write{
@@ -254,3 +263,29 @@ td{
 
 
 
+
+
+
+
+ /* font */
+
+@font-face{
+    font-family: "bold";
+    src: url(./font/NotoSans-Bold.ttf);   
+    /* css의 다른 파일 경로는 url() 사용 */
+    }
+
+    @font-face{
+    font-family: "light";
+    src: url(./font/NotoSans-Light.ttf);   
+    }
+
+    @font-face{
+        font-family: "regular";
+        src: url(./font/NotoSans-Regular.ttf);   
+    }
+
+    @font-face {
+        font-family: "medium";
+        src: url(./font/NotoSans-Medium.ttf);
+    }
