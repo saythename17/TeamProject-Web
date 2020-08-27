@@ -203,13 +203,11 @@ td{
 
 #title{
     color: #1b1b1b;
+    
 }
 
 
-#title:hover{
-    color: #669933;
-    text-decoration-line: none;
-}
+
 
 
 
@@ -304,6 +302,7 @@ td{
 
 #btn_search:hover{
     background-color: #669933;
+    text-decoration-line: none;
 }
 
 
@@ -336,4 +335,24 @@ td{
     @font-face {
         font-family: "medium";
         src: url(./font/NotoSans-Medium.ttf);
+    }
+
+
+
+
+
+
+/* 테이블 속성 */
+    .td_title{
+        font-size: 2em;
+        font-family: "light", serif;
+        color: #333;
+        text-decoration-line: none;
+        
+    }
+    
+    .td_title:hover{
+        color: #669933;
+        font-family: "bold", serif;
+        text-decoration-line: none;
     }

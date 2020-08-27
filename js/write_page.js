@@ -38,7 +38,7 @@ function sendData(){
 
 //fanLetter_page 목록에 받아지는 데이터
  function loadData(){
-
+    
     var req= new XMLHttpRequest();
     req.onreadystatechange= function(){       
         if(req.readyState==4 && req.status==200){
@@ -51,7 +51,7 @@ function sendData(){
             var table=document.getElementById('aa');
 
             for(i=0; i<js_arr.length; i++){
-                //alert('bbb');
+                //alert(js_arr.length);
                 // table.innerHTML += "<tr>";
                 // table.innerHTML += "<td>";
                 // table.innerHTML += js_arr[i].no;
@@ -85,7 +85,19 @@ function sendData(){
 
                 //속성추가
                 var id1= document.createAttribute('class');
-                td1.setAttribute(id1, "name");
+                id1.value= "td_no";
+                td1.setAttributeNode(id1);
+
+                var id2= document.createAttribute('class');
+                id2.value= "td_title";
+                td2.setAttributeNode(id2);
+                
+                var id3= document.createAttribute('class');
+                id3.value= "td_name";
+                td3.setAttributeNode(id3);
+
+                var id4= document.createAttribute('class');
+                id4.value= "td_date";
 
                 tr.appendChild(td1);
                 tr.appendChild(td2);
@@ -109,30 +121,51 @@ function sendData(){
 
 
  function getDatafromLocal(){
-    //alert('getDatafromLocal 함수 실행');
+    
 
-     var name= document.getElementById('name'); 
-    var title= document.getElementById('title');
-    //alert(title);
-    // var title= document.getElementById('msg');
-    // var name= document.getElementById('tag');
+    var locat= location.href;  //문자열  
+    alert(locat);  //http://suhyun2963.dothome.co.kr/TeamProject/post.html?no=29
+    
+    var index= locat.split("=");
+    //var parse= js_arr[1].parse.
+    //alert(typeof js_arr);
+    
+    alert(index[1]);   //ex= 29  // = 항상 1번째방에는 전달받은 no값(index 번호)가 저장되어 있음
+    var n=index[1];     //혹시 이걸로 오류뜨면 index[1]를 Number형으로 변환하기!(구글링)
+
+
+    var req= new XMLHttpRequest();
+    req.onreadystatechange= function() {
+        if(req.readyState==4 &&  req.status==200){   
+            alert(req.responseText);
+            var jsonarr=JSON.parse(req.responseText);  //json 문자열을 객체로 만들기 -> json parse하면알아서 객체로 만들어줌 =>배열
+            var title= document.getElementById('title');
+            title.innerHTML=jasonarr[n].title;
+        }
+    }
+    req.open();
+    req.send();
+
+    
+    
+
+
+
+    
+
+   
+
+    
 
      
-
-     var req= new XMLHttpRequest();
-     req.onreadystatechange= function(){
-         if(req.readyState==4 && req.status==200){
-             js_arr= JSON.parse(req.responseText);
-             alert(req.responseText);
-            //  var temp= location.href.split("=");
-            // name.innerHTML=js_arr[temp[1]].name
-     }
-
-     req.open('GET', './getData.php', true);
-     req.send();
 
      
  }
+
+
+
+
+
     
 
 
@@ -182,4 +215,4 @@ function sendData(){
     //         } 
     //     })
     // });
- }
+ 
