@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>매니지먼트숲</title>
+
+        <link rel='shortcut icon' href='http://www.msoopent.com/data/common/favicon.ico' />
+
+        <link rel="stylesheet" href="./css/company3.css" type="text/css">
+
+        <script>
+
+            marker.setMap(map);
+
+            function initMap() {
+
+                var soop = {lat:37.514882, lng:127.040588};
+
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 15, center: soop});
+
+                var marker = new google.maps.Marker({
+                position: soop,
+                map: map,
+                title: '매니지먼트 숲'
+                });
+
+                marker.addListener('click', function(){
+                    open('https://www.google.com/maps/place/(%EC%A3%BC)%EC%88%B2%EC%97%94%ED%84%B0%ED%85%8C%EC%9D%B8%EB%A8%BC%ED%8A%B8/@37.5148692,127.0383775,17z/data=!3m1!4b1!4m5!3m4!1s0x357ca40aa28c5795:0x90556ba0fdc0fde6!8m2!3d37.5148692!4d127.0405662', '_black')
+                });
+
+                var infowindow= new google.maps.infowindow({
+                    content: contentString
+                });
+
+                var marker= new google.maps.Marker({
+                    position: soop,
+                    map: map,
+                    title: '매니지먼트 숲'
+                });
+
+                marker.addListener('click', function(){
+                    infowindow.open(map, marker);
+                });
+
+            }
+        </script>
+
+
+
+    </head>
+
+
+    <body>
+
+
+
+
+
+        <p class="header">
+            <div id="icons">
+                <a href="" class="a"><img src="./img/fb.png"></a>
+                <a href="" class="a"><img src="./img/ins.png"></a>
+                <a href="" class="a"><img src="./img/you.png"> </a>
+                <a href="" class="a"> <img src="./img/n.png"></a>
+                <a href="" class="a"><img src="./img/v.png"></a>
+                <a href="" class="a"><img src="./img/n.t.png"></a>
+              </div>
+
+
+        </p>
+
+        <p>
+          <div id="top">
+            <img src="./css/">
+            <i style="margin-top: 20px;">
+              <a href="" id="ch1">COMPANY</a>
+              <a href="" id="ch2">ARTIST</a>
+              <a href="" id="ch3">COMMUNITY</a>
+           </i>
+          </div>
+        </p>
+
+        <div id="back">
+            <h1>MANAGEMENT SOOP</h1>
+            <b>MANAGEMENT COMPANY SPECIALIZING IN PREFORMERS</b>
+          </div>
+
+
+
+        <p style="text-align: center; margin-top: 60px;">
+          <span id="span">---</span>
+          <h1 style="text-align: center; margin-bottom: 20px;">CONTACT US</h1>
+        </p>
+
+    <div id="big">
+      <div id="big2">
+          <hr>
+        <header class="header" >
+
+          <section id="section">
+            <img src="./img/soop.jpg.png">
+
+          </section>
+
+          <div id="div">
+
+            <table>
+              <tr>
+                <td>
+                  <img class="imgs" src="./img/ph.png" style="margin-top: px;" >
+                  <img class="imgs" src="./img/em.png" >
+                  <img class="imgs" src="./img/addr.png" >    
+                </td>
+              </tr>
+
+            </table>
+
+            <table id="tb">
+
+
+              <tr>
+               <td><strong>팩스</strong></td>
+                <td><strong>02-543-0061</strong></td>
+              </tr>
+
+              <tr>
+                  <td><strong>E-Mail</strong></td>
+                  <td><strong>msoop04@naver.com</strong></td>
+              </tr>
+
+              <tr>
+                  <td><strong>주소</strong></td>
+                  <td><strong>서울특별시 강남구 학동로 50길 27 (논현동 242-35)</strong></td>
+              </tr>
+
+            </table>
+
+          </div>
+
+        </header>
+
+
+
+        <hr>
+
+        <div id="map"></div>
+        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKffwr_jSQg2tCooI06vdCeXZqyqJ1dQQ&callback=initMap" async></script>
+
+      </div>
+
+
+    </div>
+
+
+
+    </body>
+</html> 
