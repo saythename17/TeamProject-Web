@@ -140,26 +140,6 @@ function showSlides(n) {
 
 
 
-
-
-
-
-// function tabsHandler(index) {
-//     return function tabClickEvent() {
-//         var title=document.getElementsByClassName('video-title')[index]
-//         for(var i in title){
-//             title[i].style.display ="table-cell"
-//         }
-//         // title[i].style.display = "table-cell"
-//     };
-// }
-
-// var tabs = document.getElementsByClassName('thumbnail')
-// var i;
-
-// for (i = 0; i < tabs.length; i += 1) {
-//     tabs[i].onmouseover = tabsHandler(i);
-// }
-
-
-
+function nav(){
+    alert('on!-js')
+}

@@ -11,10 +11,11 @@ body{
 #icons{
     text-align: right;
     margin-top: 11px;
-    margin-right: 2.5%;
+    padding: .3em .5em ;
+    margin-right: 2em;
 }
 .icons_{
-    margin-left: 10px;
+    margin-left: 5px;
 }
 #logo{
     display: block;
@@ -36,16 +37,35 @@ body{
         display: none;
     }
     #logo{
+        margin-top: 2em;
         margin-right: auto;
         margin-left: auto;     
     }
     #icons{
-        margin-top: 0;
+        text-align: left;
+        margin: 0;
         background-color: #333;
+        display: flex;
+        justify-content: space-between;
+    }
+    #icons *{
+        text-decoration: none;
+    }
+    #nav{
+        color: white;
+        display: inline-block;
     }
 
-    
+}
 
+
+
+@media screen and (min-width:800px){
+    
+    #nav{
+        display: none;
+    }
+    
 }
 /* RWD */
 
@@ -525,7 +545,7 @@ ul{
     position: absolute;
     margin: auto; 
     min-height: 100%;
-    min-width: 200%;
+    min-width: 170%;
 
     /* For the following settings we set 100%, but it can be higher if needed 
     See the answer's update */
@@ -724,7 +744,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: #999;
+  color: #b8b8b8;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -738,7 +758,7 @@ img {vertical-align: middle;}
 .prevB:hover,.nextB:hover{
   background-color: rgba(255, 255, 255, 0.651);
   border-radius: 1em;
-  color: #669933;
+  color: #666;
 }
 /* Position the "next button" to the right */
 .nextB {

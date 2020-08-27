@@ -14,12 +14,18 @@
     <header id="header">
         <p>
             <div id="icons">
-                <a href="" class="icons_"><img src="./img/icon_f.png" alt="facebook"></a>
-                <a href="" class="icons_"><img src="./img/icon2_i.png" alt="instagram"></a>
-                <a href="" class="icons_"><img src='./img/icon3_y.png' alt="youtube"></a>
-                <a href="" class="icons_"><img src="./img/icon4_n.png" alt="naver"></a>
-                <a href="https://channels.vlive.tv/EBE269/home" class="icons_"><img src="./img/icon5_v.png" alt="Vapp"></a>
-                <a href="" class="icons_"><img src="./img/icon6_ntv.png" alt="naver tvcast"></a>
+                <span>
+                <a href="" class="icons_"><img id="f" style="width: 1.5em;" src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_facebook_black.png" alt="facebook"></a>
+                <a href="" class="icons_"><img id="i" style="width: 1.5em;" src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_instagram_black.png" alt="instagram"></a>
+                <a href="" class="icons_"><img id="y" style="width: 1.7em;" src='https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_youtube_black.png' alt="youtube"></a>
+                <a href="" class="icons_"><img id="n" style="width: 1.5em;" src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_naver_black.png" alt="naver"></a>
+                <a href="https://channels.vlive.tv/EBE269/home" class="icons_"><img style="width: 1.3em;" id="v" src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_vapp_black.png" alt="Vapp"></a>
+                <a href="" class="icons_"><img id="t" style="width: 1.3em;transform: rotate(270deg);" src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_ntv_black.png" alt="naver tvcast"></a>
+                </span>
+                <svg id="nav" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    onclick="nav()">
+                    <path  fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                </svg>
             </div>
             <div id="top">
                 <img id="logo" src="./img/soop.jpg.png" alt="LOGO">
@@ -35,12 +41,40 @@
                     <strong id="strong">soop</strong>
                     artist
                 </h2>
-            </div>
-            
+            </div>         
+        </p>
+
+
+
+
+
+        <script>
             
 
+            window.addEventListener('resize',displayWindowSize)
+
+            function displayWindowSize(){
+                var width=Math.max(document.documentElement.clientWidth,window.innerWidth || 0)
+                if(width<980){    
+                    console.log("mobile");       
+                    document.getElementById('f').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_facebook.png"
+                    document.getElementById('i').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_instagram.png"
+                    document.getElementById('y').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_youtube.png"
+                    document.getElementById('n').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icons_naver.png"
+                    document.getElementById('v').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_vapp.png"
+                    document.getElementById('t').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_ntv.png"
+                }else{
+                    console.log("desktop");  
+                    document.getElementById('f').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_facebook_black.png"
+                    document.getElementById('i').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_instagram_black.png"
+                    document.getElementById('y').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_youtube_black.png"
+                    document.getElementById('n').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_naver_black.png"
+                    document.getElementById('v').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_vapp_black.png"
+                    document.getElementById('t').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_ntv_black.png"
+                }
+            }
             
-        </p>
+        </script>
         
 
     </header>
