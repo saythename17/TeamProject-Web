@@ -12,6 +12,8 @@ body{
     margin-right: 2.5%;   
 }
 
+#ntv{transform: rotate(270deg);}
+
 #logo{
     width: 272px;
     margin-top: -1.2%;
@@ -27,15 +29,16 @@ body{
 
 #nav{
     margin-left: 2.5em;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "bold", serif;
     font-size: 20px;
     color: #333;
-    margin-right: 2em;   
+    margin-right: 1em;   
 }
 
 .a{
     text-decoration-line: none;
     color: #333;
+    margin-left: 10px;
 }
 
 
@@ -238,27 +241,72 @@ td{
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    margin-bottom: 30px;
 }
 
 #aa{
     margin-right: 1em;
+    color: #333;
+}
+
+#aa:hover{
+    color: #669933;
 }
 
 
 #cc{
     margin-left: 1em;
+    color: #333;
+}
+
+
+#cc:hover{
+    color: #669933;
+}
+
+
+.number{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.5em;
+    border: none;
+}
+
+.number:hover{
+    color: #669933;
+}
+
+#option{
+    padding: 6px 6px;
+    font-size: 1em;
 }
 
 
 
+#input_text{
+    padding: 7px 7px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
 
 
 #btn_search{
-    background-color: black;
+    
+    background-color: #555555;
+    border: none;
     color: white;
-    border-radius: 7px;
-    margin: 10px;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 13px;
 }
+
+
+#btn_search:hover{
+    background-color: #669933;
+}
+
+
 
 
 

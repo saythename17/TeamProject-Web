@@ -5,12 +5,15 @@ body{
 
 
 #head_icon{
-    size: 24px;
     margin-top: 1em;
     text-align: right;
     margin-top: 11px;
     margin-right: 2.5%;    
 }
+
+#ntv{transform: rotate(270deg);}
+
+
 
 #logo{
     width: 272px;
@@ -27,16 +30,18 @@ body{
 
 #nav{
     margin-left: 2.5em;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "bold", serif;
     font-size: 20px;
     color: #333;
-    margin-right: 2em;   
+    margin-right: 1em; 
+
 }
 
 
 .a{
     text-decoration-line: none;
     color: #333;
+    margin-left: 10px;
 }
 
 
@@ -169,7 +174,7 @@ body{
 }
 
 #title{
-    color: #1b1b1b;
+    color: #333;
 }
 
 
@@ -190,26 +195,88 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    margin-bottom: 30px;
 }
 
 #aa{
     margin-right: 1em;
+    color: #333;
+}
+
+#aa:hover{
+    color: #669933;
 }
 
 
 #cc{
     margin-left: 1em;
+    color: #333;
+}
+
+
+#cc:hover{
+    color: #669933;
+}
+
+
+.number{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.5em;
+    border: none;
+}
+
+.number:hover{
+    color: #669933;
 }
 
 
 
+#option{
+    padding: 4px 5px;
+}
 
+#input_text{
+    padding: 3px 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
 
 #btn_search{
-    background-color: black;
+    
+    background-color: #555555;
+    border: none;
     color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+#btn_search:hover{
+    background-color: #669933;
 }
 
 
 
-
+    /* font */
+    @font-face{
+        font-family: "bold";
+        src: url(./font/NotoSans-Bold.ttf);   
+        /* css의 다른 파일 경로는 url() 사용 */
+        }
+    
+        @font-face{
+        font-family: "light";
+        src: url(./font/NotoSans-Light.ttf);   
+        }
+    
+        @font-face{
+            font-family: "regular";
+            src: url(./font/NotoSans-Regular.ttf);   
+        }
+    
+        @font-face {
+            font-family: "medium";
+            src: url(./font/NotoSans-Medium.ttf);
+        }

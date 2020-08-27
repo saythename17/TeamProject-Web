@@ -10,8 +10,18 @@
 
     <link rel="stylesheet" href="./write_page.css">
 
-    <!-- jquery 라이브러리 적용 [CDN] -->
+   
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./js/write_page.js"></script>
 
 </head>
@@ -22,15 +32,23 @@
 <body>
 
     <header>
+        
                 
             <div id="head_icon">
-                    <a href=""><img src="./img/fb.jpg.png" alt=""></a>
-                    <a href=""><img src="./img/instar.jpg.png" alt=""></a>
-                    <a href=""><img src="./img/n.tv.png" alt=""></a>
-                    <a href=""><img src="./img/v.jpg.png" alt=""></a>
-                    <a href=""><img src="./img/youtu.jpg.png" alt=""></a>
+                    <a href=""><img width="24px" src="./img/ic_facebook_black.png" alt=""></a>
+                    <a href=""><img width="24px" src="./img/ic_instagram_black.png" alt=""></a>
+                    <a href=""><img width="24px" src="./img/ic_youtube_black.png" alt=""></a>
+                    <a href=""><img id="ntv" width="24px" src="./img/ic_ntv_black.png" alt=""></a>
+                    <a href=""><img width="24px" src="./img/ic_vapp_black.png" alt=""></a>      
             </div>
-        
+
+
+            <div class="dropdown-menu" onclick="drop_menu()">
+                <span class="dropdown-item-text">Dropdown item text</span>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
 
 
 
@@ -39,7 +57,7 @@
                 <img src="./img/soop.jpg.png" alt="soop_logo" id="logo">
                 
 
-                <div>
+                <div id="nav">
                     <a class="a" href="">COMPANY</a>
                     <a class="a" href="">ARTIST</a>
                     <a class="a" href="">COMMUNITY</a>
@@ -55,8 +73,8 @@
 
 
     <div id="container">
-        <h1>FAN LETTER PAGE</h1>
-        <P>SEND A LETTER TO YOUR STAR AND TELL THEM WHAT YOU THINK OF</P>
+        <h1 id="t1">FAN LETTER PAGE</h1>
+        <P id="t2">SEND A LETTER TO YOUR STAR AND TELL THEM WHAT YOU THINK OF</P>
     </div>
 
 
@@ -64,7 +82,7 @@
 
     <div class="news">
         <span id="line">----</span>
-        <h3 id="h3">WRITE</h3>
+        <h3 id="write">WRITE</h3>
     </div>
 
 
@@ -83,9 +101,9 @@
     <form action="./post_write_page.php" method="POST" enctype="multipart/form-data">
 
 
-        <table class="table"  width="60%">
-            <tr>
-                <td width="30%">작성자</td>
+        <table class="table"  >
+            <tr >
+                <td >작성자</td>
                 <td><input type="text"  size="70" name="name" id="name" onfocus="" style="border-radius: 6px;"></td>
             </tr>
 

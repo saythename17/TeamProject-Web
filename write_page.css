@@ -4,9 +4,25 @@
 }
 
 
+
+
+
+
 #head_icon{
+    size: 24px;
+    margin-top: 1em;
     text-align: right;
-    
+    margin-top: 11px;
+    margin-right: 2.5%;     
+}
+
+#ntv{transform: rotate(270deg);}
+
+
+#logo{
+    width: 272px;
+    margin-top: -1.2%;
+    margin-left: 0.8%;
 }
 
 
@@ -16,17 +32,31 @@
     display: flex;
 }
 
+#nav{
+    margin-left: 2.5em;
+    font-family: "bold", serif;
+    font-size: 20px;
+    color: #333;
+}
+
 
 .a{
+    text-decoration-line: none;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* .a{
     font-size: 20px;
     color: #1b1b1b;
     font-weight: bolder;
     margin-left: 2em; 
     text-decoration-line: none;
-}
+} */
 
 .a:hover{
     color: #669933;
+    text-decoration-line: none;
 }
 
 
@@ -51,6 +81,22 @@
     flex-direction: column;
 }
 
+#t1{
+    font-family: "Regular", serif;
+    font-size: 38px;
+    margin-bottom: 2px;}
+#t2{
+    font-family: "regular", serif;
+    font-size: 14px;
+    margin-top: 0px;}
+
+
+    #write{
+        font-size: 30px;
+        color: #333;
+        font-family: "regular";
+        margin-top: 10px;
+    }
 
 
 
@@ -64,9 +110,9 @@
 }
 
 
-#h3{
+/* #h3{
     margin-top: 0.4em;
-}
+} */
 
 
 
@@ -85,8 +131,13 @@
 .table{
   border-top: 2px solid #555555;
   border-bottom: 2px solid #555555;
+  column-width: 60%;
   margin-right: auto;
   margin-left: auto;
+  justify-items: center;
+  
+  
+  
 }
 
 
@@ -94,7 +145,9 @@
 td{
     padding: 20px;
     border-bottom: 1px solid lightgrey;
+    
 }
+
 
 
 
@@ -166,6 +219,38 @@ td{
 
 
 
+/* 미디어 쿼리 */
+@media screen and (max-width:600px) {
+    /* .container, .navbar{
+        flex-direction: column;
+    } */
+    #nav{
+        display: none;
+    }
+
+    #logo{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 60%;
+    }
+    #head_icon{
+        text-align: left;
+    }
+
+
+
+
+
+    @media screen and (mid-width:600px){
+
+        
+    }
+    
+
+    
+} 
 
 
 
@@ -177,6 +262,28 @@ td{
 
 
 
+
+/* font */
+@font-face{
+    font-family: "bold";
+    src: url(./font/NotoSans-Bold.ttf);   
+    /* css의 다른 파일 경로는 url() 사용 */
+    }
+
+    @font-face{
+    font-family: "light";
+    src: url(./font/NotoSans-Light.ttf);   
+    }
+
+    @font-face{
+        font-family: "regular";
+        src: url(./font/NotoSans-Regular.ttf);   
+    }
+
+    @font-face {
+        font-family: "medium";
+        src: url(./font/NotoSans-Medium.ttf);
+    }
 
 
 
