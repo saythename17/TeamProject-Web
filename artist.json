@@ -12,13 +12,17 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S67307161_3.jpg",
     "fancafe":"http://cafe.daum.net/gongyoo",
     "sns":"https://www.instagram.com/accounts/login/?next=/gongyoo79/",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/xW71Vg9R5Bo",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["https://www.youtube.com/embed/dDPyEC2DpRY","https://www.youtube.com/embed/MliZDZ7CSec","https://www.youtube.com/embed/A8HNnO2RVvI","https://www.youtube.com/embed/54loeesPfwA",
+        "https://www.youtube.com/embed/Rajp3Gq9Igo","https://www.youtube.com/embed/qJJ-Oi66NFo","https://www.youtube.com/embed/CW-5DnoLhAE","https://www.youtube.com/embed/M9pkGVle_Ds",
+        "https://www.youtube.com/embed/cRmgSrboiZI","https://www.youtube.com/embed/ShucvDAd6M4","https://www.youtube.com/embed/lHkHMe9cz1c","https://www.youtube.com/embed/IXGTHO1FpZE"],
+    "videoTitle":["에피그램 2020S/S","(ENG)2020 숲 배우가 숲 배우에게 묻는다 '공유' 편","라 메르 기프트 필름","비씨카드 <여유의혜택> 메이킹 + 공유 인터뷰",
+        "멋짐 이라는게 대폭발 했다! (feat. 킥보드 공유)","갑.분.춤이란 이런 것! 갑자기 리듬에 몸을 맡기는 댄싱머신 공유","카누 SPRING 편 30초 -180307","시도 때도 없이 생각나는 매력 모음.zip 💝",
+        "내가 알던 '공유' 😳?!!! (feat. 넘치는 끼💃🕺)","크리스마스 ASMR","이것은 비하인드인가, A컷인가 ? (카누 메이킹☕)","당신의 4계절 공유를 골라주세요♥"],
+    "thumbnail":["https://img.youtube.com/vi/dDPyEC2DpRY/mqdefault.jpg","https://img.youtube.com/vi/MliZDZ7CSec/mqdefault.jpg","https://img.youtube.com/vi/A8HNnO2RVvI/mqdefault.jpg","https://img.youtube.com/vi/54loeesPfwA/mqdefault.jpg",
+        "https://img.youtube.com/vi/Rajp3Gq9Igo/mqdefault.jpg","https://img.youtube.com/vi/qJJ-Oi66NFo/mqdefault.jpg","https://img.youtube.com/vi/CW-5DnoLhAE/mqdefault.jpg","https://img.youtube.com/vi/M9pkGVle_Ds/mqdefault.jpg",
+        "https://img.youtube.com/vi/cRmgSrboiZI/mqdefault.jpg","https://img.youtube.com/vi/ShucvDAd6M4/mqdefault.jpg","https://img.youtube.com/vi/lHkHMe9cz1c/mqdefault.jpg","https://img.youtube.com/vi/IXGTHO1FpZE/mqdefault.jpg"]
     },
 
     
@@ -36,13 +40,17 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S89609493_P2.jpg",
     "fancafe":"http://cafe.daum.net/kkonghyojin?t__nil_cafemy=item",
     "sns":"https://www.instagram.com/rovvxhyo",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/uquZRKlT5ng",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["https://www.youtube.com/embed/uquZRKlT5ng","https://www.youtube.com/embed/bynwbr3pslc","https://www.youtube.com/embed/zWfCiv8FyEE","https://www.youtube.com/embed/pjvxL858ZGk",
+        "https://www.youtube.com/embed/xnCTf41es0M","https://www.youtube.com/embed/aFwMkhdZNDg","https://www.youtube.com/embed/4wURqTa9NJ4","https://www.youtube.com/embed/qrq-aKzM9nY",
+        "https://www.youtube.com/embed/zdy5JOYZuqM","https://tv.naver.com/v/9515114?t=42","https://www.youtube.com/embed/JzUl086S61k","https://www.youtube.com/embed/LqdjHTAZjb8"],
+    "videoTitle":["봄에는 ‘공효진’ 🌺 심플라떼 촬영 현장","2020 To Do List 공효진편 (feat. 숲년운세)","엘르 메이킹","동백씨, 종영소감 보고가세유 이렇게는 못보내는데 어쪄쥬ㅠㅠ",
+        "동백♥용식 기찻길 이별 장면 비하인드(feat. 500잔씬은 싸비스)","동백꽃 필 무렵 메이킹 영상","※주접 환영※ 조회수 폭발각 공효진X강하늘 키스(?)신 비하인드","가장 특별한 ♥공블리♥의 ‘가장 보통의 연애’",
+        "☆동백이몽:번외편☆ 공블리+동블리 입덕 영상 ＜동백꽃 필 무렵＞","공효진X강하늘 동백꽃 필 무렵 웃음 폭발! 설렘 폭격!! 대본리딩 현장","전격공개📌 공블리의 걸크러쉬 매력 (feat. 공크러쉬)","공효진과 함께 하는 해외 출장이 궁금하다 🤔 (in 홍콩) 2편"],
+    "thumbnail":["https://img.youtube.com/vi/uquZRKlT5ng/mqdefault.jpg","https://img.youtube.com/vi/bynwbr3pslc/mqdefault.jpg","https://img.youtube.com/vi/zWfCiv8FyEE/mqdefault.jpg","https://img.youtube.com/vi/pjvxL858ZGk/mqdefault.jpg",
+        "https://img.youtube.com/vi/xnCTf41es0M/mqdefault.jpg","https://img.youtube.com/vi/aFwMkhdZNDg/mqdefault.jpg","https://img.youtube.com/vi/4wURqTa9NJ4/mqdefault.jpg","https://img.youtube.com/vi/qrq-aKzM9nY/mqdefault.jpg",
+        "https://img.youtube.com/vi/zdy5JOYZuqM/mqdefault.jpg","http://www.msoopent.com/data/file/video/%EA%B3%B5%ED%9A%A8%EC%A7%84.jpg","https://img.youtube.com/vi/JzUl086S61k/mqdefault.jpg","https://img.youtube.com/vi/LqdjHTAZjb8/mqdefault.jpg"]
     },
 
 
@@ -60,14 +68,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S35461561_3.jpg",
     "fancafe":"https://cafe.naver.com/fanjaeuck",
     "sns":"https://www.instagram.com/jaeuck.kim",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/JGJv-kiYsSI",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
-    
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
     
@@ -84,13 +89,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S59542031_3.jpg",
     "fancafe":"https://www.instagram.com/jinius_shj",
     "sns":"https://mobile.twitter.com/jini26991",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/IZe7CzZw47c",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -108,13 +111,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S51477494_3.jpg",
     "fancafe":"https://m.cafe.daum.net/leechunhee",
     "sns":"https://www.instagram.com/chuny012/",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/dqtnfFI_b84",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -131,13 +132,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S91823270_P2.jpg",
     "fancafe":"#",
     "sns":"#",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/e6zrG1279zs",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -155,13 +154,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S7579309_P2.jpg",
     "fancafe":"http://cafe.daum.net/youmesarangni",
     "sns":"https://www.instagram.com/YUM_YUM/",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/wdKX_rhiAEU",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -179,13 +176,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S93933641_3.jpg",
     "fancafe":"https://cafe.naver.com/19950917",
     "sns":"https://www.instagram.com/hyuniiiiiii_95917/",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/D8PBZGjeMi8",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -207,9 +202,9 @@
     "photos2":["a","b","c"],
     "photos3":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/V8lUX_j0sQ4",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -228,13 +223,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S05660541_3.jpg",
     "fancafe":"http://cafe.daum.net/LEEJJ1020",
     "sns":"https://www.instagram.com/leejj1020/",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photos":["a","b","c"],
     "mainVideo":"https://www.youtube.com/watch?v=eYxe-yNmcI8",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -252,13 +245,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S65783091_3.jpg",
     "fancafe":"www.instagram.com/soo146/",
     "sns":"www.instagram.com/soo146/",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/dHPYGz8Gk9o",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -277,13 +268,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S07962705_P2.jpg",
     "fancafe":"https://blog.naver.com/yancu32/221417800109",
     "sns":"https://m.post.naver.com/viewer/postView.nhn?volumeNo=7013543&memberNo=22903361",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/SD3GPGfH1eY",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -302,13 +291,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S31722005_3.jpg",
     "fancafe":"http://cafe.daum.net/garam93",
     "sns":"http://cafe.daum.net/garam93",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/WzcComDaruY",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -327,13 +314,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S01825345_3.jpg",
     "fancafe":"http://cafe.daum.net/sonnyangel2019",
     "sns":"https://namu.wiki/w/%EC%A0%84%EC%86%8C%EB%8B%88",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/6ZrFaFzRf2I",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -352,13 +337,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S45614969_3.jpg",
     "fancafe":"#",
     "sns":"#",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/dHPYGz8Gk9o",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -377,13 +360,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S87930897_P2.jpg",
     "fancafe":"http://cafe.daum.net/choiw",
     "sns":"https://www.instagram.com/dntlrdl",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/xnKs1FRhQxs",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -402,13 +383,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S61703024_3.jpg",
     "fancafe":"http://cafe.daum.net/baesuzy941010",
     "sns":"https://www.instagram.com/skuukzky/",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/pQNGvv5DW9o",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -427,13 +406,11 @@
     "mainImg":"http://www.msoopent.com/data/file/artist/S15757891_3.jpg",
     "fancafe":"http://cafe.daum.net/njh0222",
     "sns":"https://www.instagram.com/skawngur/",
-    "photos1":["a","b","c"],
-    "photos2":["a","b","c"],
-    "photos3":["a","b","c"],
+    "photo":["a","b","c"],
     "mainVideo":"https://www.youtube.com/embed/QLiAdBBAVxI",
-    "videos1":["","","",""],
-    "videos2":["","","",""],
-    "videos3":["","","",""]
+    "video":["","","",""],
+    "videoTitle":["","","",""],
+    "thumbnail":["","","",""]
     },
 
 
@@ -451,14 +428,12 @@
         "mainImg":"http://www.msoopent.com/data/file/artist/S39564043_3.jpg",
         "fancafe":"#",
         "sns":"https://www.instagram.com/jsunghoon/",
-        "photos1":["a","b","c"],
-        "photos2":["a","b","c"],
-        "photos3":["a","b","c"],
+        "photo":["a","b","c"],
         "mainVideo":"https://www.youtube.com/embed/Lm2C2KRww5M",
-        "videos1":["","","",""],
-        "videos2":["","","",""],
-        "videos3":["","","",""]
-        }
+        "video":["","","",""],
+        "videoTitle":["","","",""],
+        "thumbnail":["","","",""]
+    }
 
     
 ]

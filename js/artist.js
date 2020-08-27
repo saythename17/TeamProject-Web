@@ -46,6 +46,19 @@ var artistInfo=a=>{
 
             // video
             document.getElementById('video-frame').src=""+artists[a].mainVideo
+
+            var videos=document.getElementsByClassName('video-list')
+            var thumbnail=document.getElementsByClassName('thumbnail')
+            var title=document.getElementsByClassName('video-title')
+            for(var i in videos){
+                videos[i].href=artists[a].video[i]
+            }
+            for(var i in videos){
+                thumbnail[i].src=artists[a].thumbnail[i]
+            }
+            for(var i in videos){
+                title[i].innerText=artists[a].videoTitle[i]
+            }
         }
     }
     req.open('POST','./artist.json',true)

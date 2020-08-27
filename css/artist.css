@@ -3,6 +3,7 @@
     text-transform: uppercase;
 }
 body{
+    padding: 0;
     margin-bottom: 3em;
     width: 100%;
 }
@@ -25,6 +26,29 @@ body{
     -webkit-justify-content: space-between;
 	justify-content: space-between;
 }
+
+
+
+/* Response Wrap Design  */
+@media screen and (max-width:800px){
+
+    #top i{
+        display: none;
+    }
+    #logo{
+        margin-right: auto;
+        margin-left: auto;     
+    }
+    #icons{
+        margin-top: 0;
+        background-color: #333;
+    }
+
+    
+
+}
+/* RWD */
+
 
 
 
