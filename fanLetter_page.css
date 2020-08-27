@@ -5,8 +5,18 @@ body{
 
 
 #head_icon{
+    size: 24px;
+    margin-top: 1em;
     text-align: right;
+    margin-top: 11px;
+    margin-right: 2.5%;
     
+}
+
+#logo{
+    width: 272px;
+    margin-top: -1.2%;
+    margin-left: 0.8%;
 }
 
 
@@ -16,19 +26,36 @@ body{
     display: flex;
 }
 
+#nav{
+    margin-left: 2.5em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-right: 2em;   
+}
 
 .a{
+    text-decoration-line: none;
+}
+
+
+
+
+/* .a{
     font-size: 20px;
     color: #1b1b1b;
     font-weight: bolder;
     margin-left: 2em; 
-}
+} */
 
 .a:hover{
     color: #669933;
     text-decoration-line: none;
 }
 
+
+
+   
 
 
 
@@ -40,6 +67,7 @@ body{
 
 
 #container{
+    font-family: 'Noto Sans KR', sans-serif;
     height: 300px;
     color: white;
     background-image: url("./img/soop1.png");
@@ -50,6 +78,13 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
+
+
+#t1{font-size: 35px;
+    margin-bottom: 2px;}
+#t2{margin-top: 0px;}
+
 
 
 
@@ -64,8 +99,12 @@ body{
 }
 
 
-#h3{
-    margin-top: 0.4em;
+#title{
+    /*margin-top: 0.4em;*/
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
 }
 
 
@@ -91,7 +130,10 @@ body{
 
 .nav_link{
     margin: 15px;
-    
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
 }
 
 #link:hover{

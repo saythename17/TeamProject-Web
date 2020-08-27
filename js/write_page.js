@@ -83,6 +83,10 @@ function sendData(){
                 var td4 = document.createElement('td');
                 td4.innerText = js_arr[i].date
 
+                //속성추가
+                var id1= document.createAttribute('class');
+                td1.setAttribute(id1, "name");
+
                 tr.appendChild(td1);
                 tr.appendChild(td2);
                 tr.appendChild(td3);
