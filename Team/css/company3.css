@@ -88,9 +88,7 @@
 
 
   .header{
-      margin-top: 5%;
       width: 80%;
-      height: 200px;
       display: flex;
       justify-content: space-between;
   }
