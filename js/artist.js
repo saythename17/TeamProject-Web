@@ -134,12 +134,13 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "flex"; 
-  dots[slideIndex-1].className += " active";
+  //slides[slideIndex-1].style.display = "flex"; 
+  //dots[slideIndex-1].className += " active";
 }
 
 
 
 function nav(){
-    alert('on!-js')
+    var nav=document.getElementById('navMenu')
+    nav.innerHTML = '<p><a href="" class="menu">company</p><p><a href="" class="menu">artist</p><p><a href="" class="menu">community</p>'
 }

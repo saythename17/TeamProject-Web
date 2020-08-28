@@ -27,12 +27,14 @@
                     <path  fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
                 </svg>
             </div>
+            <div id="navMenu">
+            </div>
             <div id="top">
-                <img id="logo" src="./img/soop.jpg.png" alt="LOGO">
+                <a id="logo" href="index.html"><img  src="./img/soop.jpg.png" alt="LOGO"></a>
                 <i>
-                    <a href="" class="menu">company</a>
-                    <a href="" class="menu">artist</a>
-                    <a href="" class="menu">community</a>
+                    <a href="./company.html" class="menu">company</a>
+                    <a href="#" class="menu">artist</a>
+                    <a href="./community.html" class="menu">community</a>
                 </i>
             </div>
             <div id="title">
@@ -73,6 +75,7 @@
                     document.getElementById('t').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_ntv_black.png"
                 }
             }
+            displayWindowSize()
             
         </script>
         
@@ -110,7 +113,7 @@
 
 
         <!-- profile -->
-        <article id="actor" style="display: none;">        
+        <article id="actor" style="display: flex;">        
             <section class="main">
 
             <div>
@@ -205,7 +208,7 @@
 
 
         <!-- photo --> 
-        <article id="photo" style="display: flex;">
+        <article id="photo" style="display: none;">
             <div id="photo-top">
                 <h1 class="name"><span id="star2">공유</span><span id="nameEnp" class="sidename">gong yoo</span></h1>
                 <h4>

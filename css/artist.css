@@ -55,6 +55,20 @@ body{
         color: white;
         display: inline-block;
     }
+    #navMenu{
+        display: block;
+        padding: 0; margin: 0;
+    }
+    #navMenu .menu{
+        display: block;
+        margin-right: auto;
+        margin-left: 0;
+        text-align: center;
+        padding: .5em 0;
+    }
+    #navMenu .menu:hover,#navMenu .menu:active{
+        background-color: #b8b8b8;
+    }
 
 }
 
