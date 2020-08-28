@@ -101,34 +101,35 @@
     <form action="./post_write_page.php" method="POST" enctype="multipart/form-data">
 
 
-        <table class="table"  >
+       <div class="table_no_shrink" >
+        <table id="table">
             <tr >
-                <td >작성자</td>
+                <td class="no_shrink" style="flex-shrink: 0;" >작성자</td>
                 <td><input type="text"  size="70" name="name" id="name" onfocus="" style="border-radius: 6px;"></td>
             </tr>
 
             <tr class="tr">
-                <td>비밀번호</td>
+                <td class="no_shrink" >비밀번호</td>
                 <td><input type="password" size="70" name="pw" id="pw"></td>
             </tr>
 
             <tr class="tr">
-                <td>이메일</td>
+                <td class="no_shrink">이메일</td>
                 <td><input type="email" size="70" name="email" id="email"></td>
             </tr>
 
             <tr class="tr">
-                <td>핸드폰</td>
+                <td class="no_shrink">핸드폰</td>
                 <td><input type="text" size="70" name="phone" id="phone"></td>
             </tr>
 
             <tr class="tr">
-                <td>제목</td>
+                <td class="no_shrink">제목</td>
                 <td><input type="text" placeholder="두부플러스 공지사항입니다." size="70" name="title" id="title"></td>
             </tr>
 
             <tr class="tr">
-                <td rowspan="2">내용</td>
+                <td class="no_shrink" rowspan="2">내용</td>
                 <td><input type="checkbox" value="" checked="checked" name="secret" id="secret">비밀글</td>
             </tr>
 
@@ -138,19 +139,20 @@
             </tr>
 
             <tr>
-                <td>태그입력</td>
+                <td class="no_shrink">태그입력</td>
                 <td><input type="text" placeholder="태그와 태그는 쉼표(.)로 구분합니다." size="70" name="tag" id="tag"></td>
             </tr>
           
 
             <tr class="tr" id="tr1"> 
-                <td rowspan="2">첨부파일</td>
+                <td class="no_shrink" rowspan="2">첨부파일</td>
                 <td id="file_size">*첨부용량 : 최대 100MB를 넣을 수 있습니다.</td>
             </tr>
 
             <td><input name="file" id="file" type="file" value="파일추가" style="border: none;"></td>
 
         </table>
+       </div>
 
 
 

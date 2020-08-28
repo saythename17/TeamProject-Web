@@ -1,12 +1,11 @@
 
 
 
-// document.getElementById('btn_ok').addEventListener('click', function btn_ok(){
-//     alert('aaa');
-// });
 
 
 
+// 데이터 서버에서 보내기
+// write_page.html 에서 확인버튼을 누르면 실행/  
 function sendData(){
     alert('확인을 누르셨습니다.');
 
@@ -35,7 +34,7 @@ function sendData(){
 
 
 
-
+//fanLetter_page.html 페이지를 열면 받아오는 데이터
 //fanLetter_page 목록에 받아지는 데이터
  function loadData(){
     
@@ -44,21 +43,19 @@ function sendData(){
         if(req.readyState==4 && req.status==200){
             //alert(req.responseText);    //4번째까지 응답받았을때/ 성공했을때 실행됨
             js_arr=JSON.parse(req.responseText);   //JSON.parse()를 사용하여 객체로 변환  //이미 배열
-            //document.getElementById("title").innerHTML= 
-
             
             //alert(js_arr.length);
             var table=document.getElementById('aa');
 
             for(i=0; i<js_arr.length; i++){
-                //alert(js_arr.length);
+                // alert(js_arr.length);
                 // table.innerHTML += "<tr>";
                 // table.innerHTML += "<td>";
                 // table.innerHTML += js_arr[i].no;
                 // table.innerHTML += "</td>";
 
                 // table.innerHTML += "<td>";
-                // table.innerHTML += '<a href="./post.html?no='+js_arr[i].no+'">';
+                // table.innerHTML += '<a href="./post.html?no="'+js_arr[i].no+'>';
                 // table.innerHTML += js_arr[i].title;
                 // table.innerHTML += "</a>";
                 // table.innerHTML += "</td>";
@@ -119,7 +116,7 @@ function sendData(){
 
 
 
-
+//fanLetter_page.html 에서 post.html 데이터로 데이터 전달받아오기 (location 에 저장되어있음)
  function getDatafromLocal(){
     
 
@@ -136,14 +133,15 @@ function sendData(){
 
     var req= new XMLHttpRequest();
     req.onreadystatechange= function() {
-        if(req.readyState==4 &&  req.status==200){   
-            alert(req.responseText);
+        if(req.readyState==4 &&  req.status==200){  
+            //alert("if 문 실행"); 
+            //alert(req.responseText);
             var jsonarr=JSON.parse(req.responseText);  //json 문자열을 객체로 만들기 -> json parse하면알아서 객체로 만들어줌 =>배열
             var title= document.getElementById('title');
-            title.innerHTML=jasonarr[n].title;
+            title.innerHTML=jsonarr[n].title;
         }
     }
-    req.open();
+    req.open('GET', './loadData.php?no='+n, true);
     req.send();
 
     

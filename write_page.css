@@ -124,6 +124,7 @@
     margin-top: 4em;
     margin-bottom: 4em;
     text-align: center;
+    
 }
 
 
@@ -131,15 +132,14 @@
 
 
 
-.table{
+#table{
   border-top: 2px solid #555555;
   border-bottom: 2px solid #555555;
-  column-width: 60%;
+  background-color: pink;
+  width: 60%;
   margin-right: auto;
   margin-left: auto;
-  justify-items: center;
-  
-  
+  display: flex;
   
 }
 
@@ -221,6 +221,18 @@ td{
 
 
 
+/* table 사이즈 다시 */
+/* .table_no_shrink{
+    width: 60%;
+    display: flex;
+    flex-shrink: 0;
+
+} */
+
+
+
+
+
 
 /* 미디어 쿼리 */
 @media screen and (max-width:600px) {
@@ -242,18 +254,13 @@ td{
         text-align: left;
     }
 
-
-
-
-
-    @media screen and (mid-width:600px){
-
-        
+    
+    .no_shrink{
+        flex-shrink: 0;
+        width: 60%;
     }
-    
 
-    
-} 
+}
 
 
 
@@ -266,8 +273,10 @@ td{
 
 
 
-/* font */
-@font-face{
+
+
+    /* font */
+    @font-face{
     font-family: "bold";
     src: url(./font/NotoSans-Bold.ttf);   
     /* css의 다른 파일 경로는 url() 사용 */
