@@ -45,39 +45,6 @@
                 </h2>
             </div>         
         </p>
-
-
-
-
-
-        <script>
-            
-
-            window.addEventListener('resize',displayWindowSize)
-
-            function displayWindowSize(){
-                var width=Math.max(document.documentElement.clientWidth,window.innerWidth || 0)
-                if(width<980){    
-                    console.log("mobile");       
-                    document.getElementById('f').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_facebook.png"
-                    document.getElementById('i').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_instagram.png"
-                    document.getElementById('y').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_youtube.png"
-                    document.getElementById('n').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icons_naver.png"
-                    document.getElementById('v').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_vapp.png"
-                    document.getElementById('t').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_ntv.png"
-                }else{
-                    console.log("desktop");  
-                    document.getElementById('f').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_facebook_black.png"
-                    document.getElementById('i').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_instagram_black.png"
-                    document.getElementById('y').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_youtube_black.png"
-                    document.getElementById('n').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_naver_black.png"
-                    document.getElementById('v').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_vapp_black.png"
-                    document.getElementById('t').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_ntv_black.png"
-                }
-            }
-            displayWindowSize()
-            
-        </script>
         
 
     </header>
@@ -85,7 +52,8 @@
     <div class="container">
         <aside id="list">
             <ul>
-                <li><a class="actors" target="_self" href="#" onclick="artistInfo(0)"><span class="ccc">GONG YOO</span></a></li>
+                <li><span id="m-actors-list" onclick="actorList(this)">GONG YOO</span></li>
+                <li><a id="firstactor" class="actors" target="_self" href="#" onclick="artistInfo(0)"><span class="ccc">GONG YOO</span></a></li>
                 <li><a class="actors" target="_self" href="#" onclick="artistInfo(1)"><span class="ccc">KONG HYO JIN</span></a></li>
                 <li><a class="actors" target="_self" href="#" onclick="artistInfo(2)"><span class="ccc">KIM JAE UCK</span></a></li>
                 <li><a class="actors" target="_self" href="#" onclick="artistInfo(3)"><span class="ccc">SEO HYUN JIN</span></a></li>
@@ -103,11 +71,77 @@
                 <li><a class="actors" target="_self" href="#" onclick="artistInfo(15)"><span class="ccc">CHOI WOO SHIK</span></a></li>
                 <li><a class="actors" target="_self" href="#" onclick="artistInfo(16)"><span class="ccc">SUZY</span></a></li>
                 <li><a class="actors" target="_self" href="#" onclick="artistInfo(17)"><span class="ccc">NAM JOO HYUK</span></a></li>
-                <li><a class="actors" target="_self" href="#" onclick="artistInfo(18)"><span class="ccc">JANG SUNG HOON</span></a></li>
+                <li><a id="lastactor" class="actors" target="_self" href="#" onclick="artistInfo(18)"><span class="ccc">JANG SUNG HOON</span></a></li>
                 <li><a><span class="ccc"></span></a></li>
             </ul>
 
         </aside>
+
+
+
+
+<script>
+var tab=true
+function nav(){
+    if(tab){
+        var nav=document.getElementById('navMenu')
+        nav.innerHTML = '<p><a href="" class="menu">company</p><p><a href="" class="menu">artist</p><p><a href="" class="menu">community</p>'
+        tab=!tab
+    }else{
+        var nav=document.getElementById('navMenu')
+        nav.innerHTML = ''
+        tab=!tab
+    }
+}
+var drawer=true
+function actorList(){
+    if(drawer){
+        var list=document.getElementById('list')
+        list.style.height= '1%'
+        var actors=document.getElementsByClassName('actors')
+        for(var i=0;i<actors.length;i+=1){
+            actors[i].style.display='block'
+        } 
+        drawer=!drawer
+    }else{
+        var list=document.getElementById('list')
+        list.style.height= '2em'
+        var actors=document.getElementsByClassName('actors')
+        for(var i=0;i<actors.length;i+=1){
+            actors[i].style.display='none'
+        }
+        drawer=!drawer
+    }
+}
+
+window.addEventListener('resize',displayWindowSize)
+
+function displayWindowSize(){
+    var width=Math.max(document.documentElement.clientWidth,window.innerWidth || 0)
+    if(width<980){    
+        console.log("mobile");       
+        document.getElementById('f').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_facebook.png"
+        document.getElementById('i').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_instagram.png"
+        document.getElementById('y').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_youtube.png"
+        document.getElementById('n').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icons_naver.png"
+        document.getElementById('v').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_vapp.png"
+        document.getElementById('t').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/icon_ntv.png"
+    }else{
+        console.log("desktop");  
+        document.getElementById('f').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_facebook_black.png"
+        document.getElementById('i').src ="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_instagram_black.png"
+        document.getElementById('y').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_youtube_black.png"
+        document.getElementById('n').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_naver_black.png"
+        document.getElementById('v').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_vapp_black.png"
+        document.getElementById('t').src="https://raw.githubusercontent.com/saythename17/TeamProject-Web/public/img/ic_ntv_black.png"
+
+        var nav=document.getElementById('navMenu')
+        nav.innerHTML = ''
+        tab=true
+    }
+}
+displayWindowSize()
+</script>
 
 
 
@@ -232,8 +266,7 @@
 
             <div class="imgrow">
                 <a href="">
-                    <img class="photolist"
-                    src="http://www.msoopent.com/data/file/photo/%EA%B3%B5%EC%9C%A0%20%EC%97%90%ED%94%BC_2.jpg" 
+                    <img src="http://www.msoopent.com/data/file/photo/%EA%B3%B5%EC%9C%A0%20%EC%97%90%ED%94%BC_2.jpg" 
                     class="photolist"alt="Photo">
                 </a>
                 <a href="">
@@ -255,8 +288,7 @@
             </div>
             <div class="imgrow" id="img-end">
                 <a href="">
-                    <img class="photolist"
-                    src="http://www.msoopent.com/data/file/photo/%EA%B3%B5%EC%9C%A0%20w%20202001%20(8).jpg" 
+                    <img src="http://www.msoopent.com/data/file/photo/%EA%B3%B5%EC%9C%A0%20w%20202001%20(8).jpg" 
                     class="photolist"alt="Photo">
                 </a>
                 <a href="">
@@ -322,7 +354,7 @@
 
                  
     
-            <div style="padding: 0 2em;">
+            <div id="main-video" >
                 <h4 id="category3" style="width: 100%; text-align: end;">
                     <span onclick="profile()" class="tab">profile</span>
                     <span onclick="photo()" class="tab">photo</span>
@@ -434,6 +466,8 @@
                   <span class="dot" onclick="currentSlide(2)"></span> 
                   <span class="dot" onclick="currentSlide(3)"></span> 
                 </div>
+
+                
 
                 
                 <!-- ------------------------------------------------------ -->

@@ -31,7 +31,7 @@ body{
 
 
 /* Response Wrap Design  */
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
 
     #top i{
         display: none;
@@ -61,6 +61,7 @@ body{
     }
     #navMenu .menu{
         display: block;
+        flex-direction: column;
         margin-right: auto;
         margin-left: 0;
         text-align: center;
@@ -68,6 +69,106 @@ body{
     }
     #navMenu .menu:hover,#navMenu .menu:active{
         background-color: #b8b8b8;
+    }
+    #title *{
+        margin-top: -50%;
+    }
+
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #list{
+        display: block;
+        height: 2em;
+    }
+    .actors{
+        width: 90%;
+        text-align: center;
+        margin-left: auto; margin-right: auto;
+        vertical-align: middle;
+        background-color: #f3f3f3;
+        transition: all 1.5s; 
+        padding-top: .5em;
+        padding-bottom: .5em;
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 50%, rgba(125, 209, 108, 0.548) 50%);
+        background-position: 0 0;
+        background-size: 200% auto;
+        transition: 1.5s;     
+    }
+    .actors:hover {
+        background-position: -100% 0;
+        color: #fff;
+    }
+    #firstactor{
+        border-top-left-radius: .5em;
+        border-top-right-radius: .5em;
+        margin-top: 1em;
+    }
+    #lastactor{
+        border-bottom-left-radius: .5em;
+        border-bottom-right-radius: .5em;
+        padding-bottom: 0;
+    }
+
+    #m-actors-list{
+        display: block;
+        border: 1px solid #E5E5E5;
+        text-align: center;
+        border-radius: .5em;
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: -5%;
+        margin-bottom: 10em;
+        padding:  .8em 1.5em;   
+        font-family: sans-serif;  
+    }
+    ul .actors{
+        display: none;
+    }
+    #m-actors-list:hover{
+        background-color: #E5E5E5;
+        border: .5px solid #a4cc7ca2;
+    }
+    #actor{
+        flex-flow: column;
+        padding: 1em;
+    }
+    .main{
+        margin-bottom: 3em;
+    }
+
+
+
+
+    #photo,#video{
+        width: 95%;
+        flex-flow: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: center;
+    }
+    #imgrow{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgrow a{ 
+        height: 350px;
+        border-radius: 1.5em;
+        overflow: hidden;
+        margin-left: auto; margin-right: auto;
+    }
+    .photolist{
+        text-align: center;
+        max-height: 90%;
+        max-width: 90%;
+        min-width: 90%;
+        margin-top: 1.5em;
     }
 
 }
@@ -78,6 +179,76 @@ body{
     
     #nav{
         display: none;
+    }
+
+    #list{
+        width: 15%;
+        padding-left: 2em;
+    }
+    #actor{
+        text-align: start;
+        width: 70%;
+        display: flex;
+    }
+    .main{
+        width: 45%;
+        margin-right: 2em;
+    }
+    .right{
+        width: 60%;
+    }
+    #m-actors-list{
+        display: none;
+    }
+    #photo,#video{
+        width: 75%;
+        flex-flow: column;
+    }
+    .imgrow{
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    }
+    .imgrow *{
+        display: inline-block;
+        width: 100%;
+    }
+    .imgrow a{
+        max-width: 50%; 
+        height: 350px;
+        border-radius: 1.5em;
+        overflow: hidden;
+        margin: 0 .5em;
+        position:relative;
+    }
+    .photolist{
+        position: absolute;
+        margin: auto; 
+        min-height: 100%;
+        min-width: 170%;
+
+        /* For the following settings we set 100%, but it can be higher if needed 
+        See the answer's update */
+        width: 100px; 
+        left: 50%; 
+        transform: translate(-50%, 0); 
+        position: absolute;
+
+        
+        object-fit: fill;
+    }
+
+
+
+
+
+
+
+   
+    #slider{
+        padding: 0;
     }
     
 }
@@ -167,22 +338,7 @@ i{
     display: flex;
     justify-content: center;
 }
-#list{
-    width: 15%;
-    padding-left: 2em;
-}
-#actor{
-    text-align: start;
-    width: 70%;
-    display: flex;
-}
-.main{
-    width: 45%;
-    margin-right: 2em;
-}
-.right{
-    width: 60%;
-}
+
 
 
 
@@ -512,10 +668,7 @@ ul{
 #photo,#photo *{
     /* border: thistle 1px solid; */
 }
-#photo,#video{
-    width: 75%;
-    flex-flow: column;
-}
+
 .sidename,.sidename2{
     color: #999;
     font-weight: 600;
@@ -536,41 +689,7 @@ ul{
 #category2,#category3{
     margin-top: .5em;
 }
-.imgrow{
-    height: fit-content;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1em;
-    margin-bottom: .5em;
-}
-.imgrow *{
-    display: inline-block;
-    width: 100%;
-}
-.imgrow a{
-    max-width: 50%; 
-    height: 350px;
-    border-radius: 1.5em;
-    overflow: hidden;
-    margin: 0 .5em;
-    position:relative;
-}
-.photolist{
-    position: absolute;
-    margin: auto; 
-    min-height: 100%;
-    min-width: 170%;
 
-    /* For the following settings we set 100%, but it can be higher if needed 
-    See the answer's update */
-    width: 100px; 
-    left: 50%; 
-    transform: translate(-50%, 0); 
-    position: absolute;
-
-    
-    object-fit: fill;
-}
 .imgrow a:hover{
     color: aliceblue;
     opacity: 30%;
@@ -610,6 +729,7 @@ button{
 }
 button:hover,#pre:hover,#next:hover{
     color: #669933;
+    fill: #669933;
 }
 button::-moz-focus-inner{
     border: none;
