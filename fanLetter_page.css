@@ -23,7 +23,7 @@
 
 
 #head_icon{
-    size: 24px;
+    size:24px;
     /* margin-top: 1em; */
     text-align: right;
     /* margin-top: 11px;
@@ -74,18 +74,6 @@
 } 
 
 
-
-
-
-
-
-
-/* .a{
-    font-size: 20px;
-    color: #1b1b1b;
-    font-weight: bolder;
-    margin-left: 2em; 
-} */
 
 .a:hover{
     color: #669933;
