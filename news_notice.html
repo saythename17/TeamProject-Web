@@ -26,7 +26,20 @@
                     margin-top: 30px;
                     margin-bottom: 30px;
                 }
-                #head_icon{text-align: left;}
+                
+                .menu{
+                    display: block;     
+                }
+
+
+                #head_icon{
+                    text-align: left;
+                    display: inline;
+                    float: left;
+                    margin-left: 1em;
+                    margin-top: -40px;
+                }
+
         } 
         
       
@@ -45,18 +58,29 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
 
     <header>
-                
-        <div id="head_icon">
-            <a href=""><img width="24px" src="./img/ic_facebook_black.png" alt=""></a>
-            <a href=""><img width="24px" src="./img/ic_instagram_black.png" alt=""></a>
-            <a href=""><img width="24px" src="./img/ic_youtube_black.png" alt=""></a>
-            <a href=""><img id="ntv" width="24px" src="./img/ic_ntv_black.png" alt=""></a>
-            <a href=""><img width="24px" src="./img/ic_vapp_black.png" alt=""></a>      
+        <div>
+            <div class="menu">
+                <label for="" class="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+
+
+            <div id="head_icon" style="background-color: aqua;">
+                <a href=""><img width="24px" src="./img/ic_facebook_black.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/ic_instagram_black.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/ic_youtube_black.png" alt=""></a>
+                <a href=""><img id="ntv" width="24px" src="./img/ic_ntv_black.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/ic_vapp_black.png" alt=""></a>      
+            </div>
         </div>
+
+       
         
 
 

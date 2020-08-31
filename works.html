@@ -22,6 +22,44 @@
   
       <!-- Latest compiled JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+      <style>
+        @media screen and (max-width:600px) {
+                /* .container, .navbar{
+                    flex-direction: column;
+                } */
+                #nav{
+                    display: none;
+                }
+
+                #logo{
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+                .menu{
+                    display: block;
+                    
+                }
+
+
+                #head_icon{
+                    text-align: left;
+                    display: inline;
+                    float: left;
+                    margin-left: 1em;
+                    margin-top: -40px;
+                }
+               
+        }   
+
+   
+    </style>
 </head>
 
 
@@ -30,14 +68,25 @@
 <body>
 
     <header>
-                
-            <div id="head_icon">
-                    <a href=""><img src="./img/ic_facebook_black.png" alt=""></a>
-                    <a href=""><img src="./img/ic_instagram_black.png" alt=""></a>
-                    <a href=""><img src="./img/ic_youtube_black.png" alt=""></a>
-                    <a href=""><img src="./img/ic_ntv_black.png" alt=""></a>
-                    <a href=""><img src="./img/ic_vapp_black.png" alt=""></a>
+
+      <div>
+          <div class="menu">
+                <label for="" class="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </label>
             </div>
+
+
+            <div id="head_icon" style="background-color: aqua; border: 1px solid red;">
+                <a href=""><img width="24px" src="./img/ic_facebook_black.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/ic_instagram_black.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/ic_youtube_black.png" alt=""></a>
+                <a href=""><img id="ntv" width="24px" src="./img/ic_ntv_black.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/ic_vapp_black.png" alt=""></a>      
+            </div>
+      </div>
+                
+            
         
 
 
@@ -47,11 +96,13 @@
                 <img src="./img/soop.jpg.png" alt="soop_logo" id="logo">
                 
 
-                <div>
-                    <a class="a" href="">COMPANY</a>
-                    <a class="a" href="">ARTIST</a>
-                    <a class="a" href="">COMMUNITY</a>
-                </div>
+                <div id="nav">
+                  <ul>
+                      <li><a class="a" href="#">company</a></li>
+                      <li><a class="a" href="#">artist</a></li>
+                      <li><a class="a" href="#">community</a></li>
+                  </ul>
+              </div>
                 
                 
             </div>

@@ -4,6 +4,22 @@
 }
 
 
+.menu{
+    height: 50px;
+    background-color: #333;
+    display: none;
+}
+
+.menuBtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -34,9 +50,23 @@
 
 #nav{
     margin-left: 2.5em;
+    /* margin-right: 1em; */
+    height: 50px;
+}
+
+#nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+#nav ul li{
+    list-style: none;
+    display: inline-block;
     font-family: "bold", serif;
-    font-size: 20px;
     color: #333;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
 }
 
 
@@ -44,6 +74,7 @@
     text-decoration-line: none;
     color: #333;
     margin-left: 10px;
+    text-transform: uppercase;
 }
 
 /* .a{

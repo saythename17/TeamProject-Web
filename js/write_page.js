@@ -1,9 +1,5 @@
 
 
-
-
-
-
 // 데이터 서버에서 보내기
 // write_page.html 에서 확인버튼을 누르면 실행/  
 function sendData(){

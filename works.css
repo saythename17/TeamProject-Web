@@ -4,9 +4,32 @@
 }
 
 
-#head_icon{
-    text-align: right;
+.menu{
+    height: 50px;
+    background-color: #333;
+    display: none;
 }
+
+.menuBtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
+#head_icon{
+    size:24px;
+    /* margin-top: 1em; */
+    text-align: right;
+    /* margin-top: 11px;
+    margin-right: 2.5%;    */
+}
+
+#ntv{transform: rotate(270deg);}
 
 
 
@@ -18,17 +41,42 @@
 }
 
 
+
+#nav{
+    margin-left: 2.5em;
+    /* margin-right: 1em; */
+    height: 50px;
+}
+
+#nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+#nav ul li{
+    list-style: none;
+    display: inline-block;
+    font-family: "bold", serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+
+
 .a{
     font-size: 20px;
     color: #1b1b1b;
     font-weight: bolder;
     margin-left: 2em; 
     text-decoration-line: none;
+    text-transform: uppercase;
 }
 
-a:hover{
+.a:hover{
     color: #669933;
-    opacity: 50%;
+    text-decoration-line: none;
+    text-transform: uppercase;
 }
 
 
@@ -65,6 +113,7 @@ a:hover{
     margin-top: 4em;
     margin-bottom: 4em;
     text-align: center;
+    font-family: "regular", serif;
 }
 
 
@@ -137,6 +186,28 @@ a:hover{
 
 
 
+ /* font */
+
+ @font-face{
+    font-family: "bold";
+    src: url(./font/NotoSans-Bold.ttf);   
+    /* css의 다른 파일 경로는 url() 사용 */
+    }
+
+    @font-face{
+    font-family: "light";
+    src: url(./font/NotoSans-Light.ttf);   
+    }
+
+    @font-face{
+        font-family: "regular";
+        src: url(./font/NotoSans-Regular.ttf);   
+    }
+
+    @font-face {
+        font-family: "medium";
+        src: url(./font/NotoSans-Medium.ttf);
+    }
 
 
 
