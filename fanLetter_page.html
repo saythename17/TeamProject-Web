@@ -24,15 +24,18 @@
                     margin-top: 30px;
                     margin-bottom: 30px;
                 }
+
+                .menu{
+                    display: block;
+                }
+
+
                 #head_icon{
                     text-align: left;
+                    display: inline;
                 }
 
-                #hamburger{
-                    visibility: visible;
-                    text-align: right;
-                }
-
+                
 
 
                
@@ -93,6 +96,13 @@
 
 
         <div>
+            <div class="menu">
+                <label for="" class="menuBtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+
+
             <div id="head_icon" style="background-color: aqua; border: 1px solid red;">
                 <a href=""><img width="24px" src="./img/ic_facebook_black.png" alt=""></a>
                 <a href=""><img width="24px" src="./img/ic_instagram_black.png" alt=""></a>
@@ -104,18 +114,12 @@
         
         
 
-
-
             <div class="header_link">
                
                 <img src="./img/soop.jpg.png" alt="soop_logo" id="logo">
                 
 
                 <div id="nav">
-                    <label for="check" class="checkBtn">
-                        <i id="hamburger" class="fas fa-bars"></i>
-                    </label>
-
                     <ul>
                         <li><a class="a" href="#">company</a></li>
                         <li><a class="a" href="#">artist</a></li>
