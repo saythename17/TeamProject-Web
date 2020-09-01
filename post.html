@@ -44,7 +44,14 @@
                     margin-top: -40px;
                 }
   
-        }   
+        } 
+        
+        
+        @media screen and (min-width:600px){
+                .list1{
+                    display: none;
+                }
+        }
     </style>
     
     <!-- Latest compiled and minified CSS -->
@@ -75,9 +82,26 @@
         <div>
             <div class="menu">
                 <label for="" class="menuBtn">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" id="clickMenuBtn" onclick="clickMenu()"></i>
                 </label>
             </div>
+
+            <script>
+                var tab= true;
+                function clickMenu(){
+                    if(tab){
+                        var menu_ul= document.getElementById('menu_list');
+                        menu_ul.innerHTML= '<p><a href="" class="list1">company</p><p><a href="" class="list1">artist</p><p><a href="" class="list1">community</p>';
+                        tab=!tab; 
+                    }else{
+                        var menu_ul= document.getElementById('menu_list');
+                        menu_ul.innerHTML= '';
+                        tab=!tab;
+                    }
+                }
+            </script>
+
+
 
         
             <div id="head_icon" style="background-color: aqua; border: 1px solid red;">

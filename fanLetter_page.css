@@ -20,6 +20,38 @@
 }
 
 
+#menu_list p{
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+
+.list1{
+    background: lightpink;
+    border-bottom: 1px solid red;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.2em;
+    font-family: "bold", serif;
+}
+
+.list1:hover{
+    color: #669933;
+    text-decoration-line: none;
+
+}
+
+
+
+
+
+
+
+
 
 
 #head_icon{

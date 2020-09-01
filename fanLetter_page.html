@@ -38,8 +38,16 @@
                     margin-left: 1em;
                     margin-top: -40px;
                 }
-               
-        }   
+
+       
+        } 
+        
+        
+        @media screen and (min-width:600px){
+                .list1{
+                    display: none;
+                }
+        }
 
    
     </style>
@@ -73,9 +81,26 @@
         <div>
             <div class="menu">
                 <label for="" class="menuBtn">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" id="clickMenuBtn" onclick="clickMenu()"></i>
                 </label>
             </div>
+
+            <script>
+                var tab= true;
+                function clickMenu(){
+                    if(tab){
+                        var menu_ul= document.getElementById('menu_list');
+                        menu_ul.innerHTML= '<p><a href="" class="list1">company</p><p><a href="" class="list1">artist</p><p><a href="" class="list1">community</p>';
+                        tab=!tab;  //버튼을 다시 누르면 리스트들이 사라
+                    }else{
+                        var menu_ul= document.getElementById('menu_list');
+                        menu_ul.innerHTML= '';
+                        tab=!tab;
+                    }
+                }
+            </script>
+
+            
 
 
             <div id="head_icon" style="background-color: aqua; border: 1px solid red;">
@@ -84,6 +109,10 @@
                 <a href=""><img width="24px" src="./img/ic_youtube_black.png" alt=""></a>
                 <a href=""><img id="ntv" width="24px" src="./img/ic_ntv_black.png" alt=""></a>
                 <a href=""><img width="24px" src="./img/ic_vapp_black.png" alt=""></a>      
+            </div>
+
+            <div id="menu_list">
+
             </div>
         </div>
         

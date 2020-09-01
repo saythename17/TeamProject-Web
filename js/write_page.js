@@ -1,3 +1,11 @@
+//menu 버튼 누르면 발동되는 함수
+function clickMenu(){
+    alert('메뉴버튼 누르기');
+    
+
+}
+
+
 
 
 // 데이터 서버에서 보내기
@@ -143,16 +151,6 @@ function sendData(){
     
     
 
-
-
-    
-
-   
-
-    
-
-     
-
      
  }
 
@@ -165,48 +163,5 @@ function sendData(){
 
 
 
-// function printData(){
- 
-//     var name= $('#name').val();
-//     var title= $('#title').val();
-//     //var file= $('#file').val();
-//     var msg= $('#msg').val();
-//     var tag= $('#tag').val();
 
-//     var data= "name="+name+"&title="+title+"&file="+file+"&msg="+msg+"$tag="+tag;
-//     var data_name="name="+name;
-
-//     $.ajax({
-//         type:"POST",
-//         url:"./getData.php",
-//         data: data,
-//         success: function(data_name){
-//             var s= JSON.parse(data);
-//             alert(s[name]);
-//             //$('#name').html(data_name);
-//             // $('#msg').html(data.title);
-//             // $('#msg').html(data.msg);
-//             // $('#tag').html(data.tag);
-//         }, 
-//         error: function(error){
-//             alert(error);
-//         }
-//     })
-
-// }
-
-
-
-    // $('#btn_ok').click(function(){
-    //     var name= $('#name').val();
-        
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "./getData.php",
-    //         data: data,
-    //         sucess: function(){
-    //            $('#name').html(data);
-    //         } 
-    //     })
-    // });
  
