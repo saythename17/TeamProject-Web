@@ -58,6 +58,7 @@
 
 /* black icon */
 #head_icon{
+    margin-right: 2em;
     size:24px;
     text-align: right;
 }
@@ -92,7 +93,7 @@
 
 #nav{
     margin-left: 2.5em;
-    /* margin-right: 1em; */
+    margin-right: 1em;
     height: 50px; 
 }
 
@@ -102,6 +103,7 @@
 }
 
 #nav ul li{
+    margin-left: 2em;
     list-style: none;
     display: inline-block;
     font-family: "bold", serif;

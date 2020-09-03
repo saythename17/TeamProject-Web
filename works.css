@@ -48,6 +48,16 @@
 
 
 
+/* 로고 */
+#logo{
+    width: 272px;
+    margin-top: -1.2%;
+    margin-left: 2%;
+}
+
+
+
+
 
 
 
@@ -58,6 +68,7 @@
 #head_icon{
     size:24px;
     text-align: right;
+    margin-right: 2em;
 }
 
 #ntv{transform: rotate(270deg);}
@@ -86,7 +97,7 @@
 
 #nav{
     margin-left: 2.5em;
-    /* margin-right: 1em; */
+    margin-right: 1em;
     height: 50px;
 }
 
@@ -167,51 +178,62 @@
 
 
 
+/* 페이지 버튼들 */
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
 
-
-
-
-.front{
-    background-color: grey;
-    border: none;
-    padding: 8px 8px;
-    text-decoration: none;
-    font-size: 13px;
-    margin-top: 15px;
+.input2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
     margin-bottom: 30px;
 }
 
+#aa{
+    margin-right: 1em;
+    color: #333;
+}
 
-#btn{
-    background-color: grey;
+#aa:hover{
+    color: #669933;
+}
+
+
+#cc{
+    margin-left: 1em;
+    color: #333;
+}
+
+
+#cc:hover{
+    color: #669933;
+}
+
+
+.number{
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.5em;
     border: none;
-    padding: 8px 8px;
-    text-decoration: none;
-    font-size: 13px;
-    margin-top: 15px;
-    margin-bottom: 30px;
 }
 
-
-.back{
-    background-color: grey;
-    border: none;
-    padding: 8px 8px;
-    text-decoration: none;
-    font-size: 13px;
-    margin-top: 15px;
-    margin-bottom: 30px;
+.number:hover{
+    color: #669933;
 }
 
 
 
-.btn_total{
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 
+
+/* 글쓰기 버튼 */
 #btn_write{
     background-color: #555555;
     color: white;

@@ -53,6 +53,7 @@
 #head_icon{
     size:24px;
     text-align: right;
+    margin-right: 2em;
 }
 
 #ntv{transform: rotate(270deg);}
@@ -84,7 +85,7 @@
 
 #nav{
     margin-left: 2.5em;
-    /* margin-right: 1em; */
+    margin-right: 1em;
     height: 50px;
 }
 
@@ -94,6 +95,7 @@
 }
 
 #nav ul li{
+    margin-left: 2em;
     list-style: none;
     display: inline-block;
     font-family: "bold", serif;
@@ -178,11 +180,6 @@
 }
 
 
-/* #h3{
-    margin-top: 0.4em;
-} */
-
-
 
 .news{
     
@@ -236,32 +233,27 @@ td{
 
 
 
+.btn{
+    display: inline;
+    float: right;
+    margin-top: 2em;
+    margin-right: 2em;
+}
 
 #btn_cancel{
-    background-color: #555555;
-    border: none;
     color: white;
     padding: 8px 20px;
-    text-decoration: none;
     font-size: 13px;
-    float: right;
-    margin-right: 10px;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    
 }
 
 
 #btn_ok{
-    background-color: #3352a7;
-    border: none;
+    background-color: #669933;
     color: white;
     padding: 8px 20px;
-    text-decoration: none;
     font-size: 13px;
-    float: right;
-    margin-right: 20%;
-    margin-top: 15px;
-    margin-bottom: 30px;
+   
 }
 
 
