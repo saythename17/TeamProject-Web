@@ -53,6 +53,10 @@
 
 
                 #head_icon{
+                    display: none;
+                }
+
+                #head_icon_white{
                     text-align: left;
                     display: inline;
                     float: left;
@@ -61,6 +65,14 @@
                 }
                
         }   
+
+
+
+        @media screen and (min-width:600px){
+                .list1{
+                    display: none;
+                }
+        }
 
    
     </style>
@@ -79,27 +91,51 @@
         <div>
             <div class="menu">
                 <label for="" class="menuBtn">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" id="clickMenuBtn" onclick="clickMenu()"></i>
                 </label>
             </div>
 
+            <script>
+                var tab= true;
+                function clickMenu(){
+                    if(tab){
+                        var menu_ul= document.getElementById('menu_list');
+                        menu_ul.innerHTML= '<p><a href="" class="list1">company</p><p><a href="" class="list1">artist</p><p><a href="" class="list1">community</p>';
+                        tab=!tab;  //버튼을 다시 누르면 리스트들이 사라
+                    }else{
+                        var menu_ul= document.getElementById('menu_list');
+                        menu_ul.innerHTML= '';
+                        tab=!tab;
+                    }
+                }
+            </script>
 
-            <div id="head_icon" style="background-color: aqua; border: 1px solid red;">
+
+
+            <div id="head_icon" >
                 <a href=""><img width="24px" src="./img/ic_facebook_black.png" alt=""></a>
                 <a href=""><img width="24px" src="./img/ic_instagram_black.png" alt=""></a>
                 <a href=""><img width="24px" src="./img/ic_youtube_black.png" alt=""></a>
                 <a href=""><img id="ntv" width="24px" src="./img/ic_ntv_black.png" alt=""></a>
                 <a href=""><img width="24px" src="./img/ic_vapp_black.png" alt=""></a>      
             </div>
+
+            <div id="head_icon_white" >
+                <a href=""><img width="24px" src="./img/icon_facebook.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/icon_instagram.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/icon_youtube.png" alt=""></a>
+                <a href=""><img id="ntv_white" width="24px" src="./img/icon_ntv.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/icon_vapp.png" alt=""></a>      
+            </div>
+
+
+            <div id="menu_list">
+
+            </div>
         </div>
 
 
-            <!-- <div class="dropdown-menu" onclick="drop_menu()">
-                <span class="dropdown-item-text">Dropdown item text</span>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-            </div> -->
+           
 
 
 

@@ -19,14 +19,57 @@
 }
 
 
+
+
+#menu_list p{
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+
+.list1{
+    border-bottom: 1px solid lightgrey;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.2em;
+    font-family: "bold", serif;
+}
+
+.list1:hover{
+    color: #669933;
+    text-decoration-line: none;
+
+}
+
+
+
+
+
+
+
+
+/* black icon */
 #head_icon{
-    margin-top: 1em;
+    size:24px;
     text-align: right;
-    margin-top: 11px;
-    margin-right: 2.5%;    
 }
 
 #ntv{transform: rotate(270deg);}
+
+
+
+/* white icon */
+#head_icon_white{
+    size:24px;
+    text-align: right;
+    display: none;
+}
+
+#ntv_white{transform: rotate(270deg);}
 
 
 

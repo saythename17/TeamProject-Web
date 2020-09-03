@@ -31,8 +31,7 @@
 
 
 .list1{
-    background: lightpink;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid lightgrey;
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -57,9 +56,24 @@
 
 
 
+/* black icon */
 #head_icon{
+    size:24px;
     text-align: right;
 }
+
+#ntv{transform: rotate(270deg);}
+
+
+
+/* white icon */
+#head_icon_white{
+    size:24px;
+    text-align: right;
+    display: none;
+}
+
+#ntv_white{transform: rotate(270deg);}
 
 #head_icon a img{
     width: 24px;
