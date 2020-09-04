@@ -54,4 +54,7 @@
     mysqli_close($conn);
 
 
+    echo("<script>location.replace('./fanLetter_page.html');</script>");
+
+
 ?>
