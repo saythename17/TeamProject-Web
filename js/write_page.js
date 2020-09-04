@@ -1,10 +1,14 @@
 //menu 버튼 누르면 발동되는 함수
 function clickMenu(){
     alert('메뉴버튼 누르기');
-    
-
 }
 
+
+
+// 팬레터 페이지에서 '글쓰기'버튼을 누르면 실행되는 함수
+function click_write(){
+    location.replace('./write_page.html');
+} 
 
 
 
