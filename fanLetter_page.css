@@ -288,6 +288,24 @@ td{
 
 
 
+/* 테이블 제목 */
+#td_title{
+    font-size: 0em;
+    font-family: "regular", serif;
+    color: #333;
+}
+
+
+#td_title:hover{
+    font-size: 0em;
+    font-family: "regular", serif;
+    color: #669933;
+}
+
+
+
+
+
 
 
 
