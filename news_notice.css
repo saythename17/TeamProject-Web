@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    height: 50px;
+    background-color: #333;
+    display: none;
+}
+
+.menuBtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+
+
+#menu_list p{
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+
+.list1{
+    border-bottom: 1px solid lightgrey;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.2em;
+    font-family: "bold", serif;
+}
+
+.list1:hover{
+    color: #669933;
+    text-decoration-line: none;
+
+}
+
+
+
+
+
+
+
+
+/* black icon */
+#head_icon{
+    size:24px;
+    text-align: right;
+    margin-bottom: 1em;
+    margin-right: 2em;
+}
+
+#ntv{transform: rotate(270deg);}
+
+
+
+/* white icon */
+#head_icon_white{
+    size:24px;
+    text-align: right;
+    display: none;
+}
+
+#ntv_white{transform: rotate(270deg);}
+
+
+
+#logo{
+    width: 272px;
+    margin-top: -1.2%;
+    margin-left: 0.8%;
+}
+
+
+.header_link{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    display: flex;
+}
+
+#nav{
+    margin-left: 2.5em;
+    font-family: "bold", serif;
+    font-size: 20px;
+    color: #333;
+    margin-right: 2em; 
+
+}
+
+
+
+.a{
+    text-decoration-line: none;
+    color: #333;
+    margin-left: 2em;
+    font-size: 18px;
+    font-family: "bold", serif;
+}
+
+
+.a:hover{
+    color: #669933;
+    text-decoration-line: none;
+}
+
+
+
+
+
+
+
+
+
+#container{
+    height: 300px;
+    color: white;
+    background-image: url("./img/soop.png");
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#t1{
+    font-family: "regular", serif;
+    font-size: 38px;
+    margin-bottom: 2px;}
+#t2{
+    font-family: "regular", serif;
+    font-size: 14px;
+    margin-top: 0px;}
+
+
+
+
+
+#line{
+    position: relative;
+    display: inline-flex;
+    font-size: 0;
+    width: 92px; height: 3px;
+    background-color: #1b1b1b;
+    text-align: center;
+}
+
+
+#title{
+    /*margin-top: 0.4em;*/
+    font-size: 30px;
+    font-family: "regular", serif;
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+
+.news{
+    
+    margin-top: 4em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.nav_link{
+    margin: 15px;
+    font-family: "regular", serif;
+}
+
+#link:hover{
+    color: #669933;
+    text-decoration-line: none;
+}
+
+
+#link_all{
+    color: #669933;
+}
+
+#link{
+    color: #1b1b1b;
+}
+
+
+
+
+
+
+
+.table{
+    border-spacing: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+
+
+.tr1{
+    border-top: 1px solid #D5D5D5; 
+}
+
+#tr1_link{
+    color: #1b1b1b;
+}
+
+
+#tr1_link:hover{
+    color: #669933;
+    text-decoration-line: none;
+}
+
+#title{
+    color: #333;
+}
+
+
+
+
+
+/* footer */
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.input2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 30px;
+}
+
+#aa{
+    margin-right: 1em;
+    color: #333;
+}
+
+#aa:hover{
+    color: #669933;
+}
+
+
+#cc{
+    margin-left: 1em;
+    color: #333;
+}
+
+
+#cc:hover{
+    color: #669933;
+}
+
+
+.number{
+    background: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.5em;
+    border: none;
+}
+
+.number:hover{
+    color: #669933;
+}
+
+
+
+#option{
+    padding: 4px 5px;
+}
+
+#input_text{
+    padding: 3px 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#btn_search{
+    
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+#btn_search:hover{
+    background-color: #669933;
+}
+
+
+
+    /* font */
+    @font-face{
+        font-family: "bold";
+        src: url(./font/NotoSans-Bold.ttf);   
+        /* css의 다른 파일 경로는 url() 사용 */
+        }
+    
+        @font-face{
+        font-family: "light";
+        src: url(./font/NotoSans-Light.ttf);   
+        }
+    
+        @font-face{
+            font-family: "regular";
+            src: url(./font/NotoSans-Regular.ttf);   
+        }
+    
+        @font-face {
+            font-family: "medium";
+            src: url(./font/NotoSans-Medium.ttf);
+        }

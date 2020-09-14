@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKS</title>
+
+    <link rel='shortcut icon' href='http://www.msoopent.com/data/common/favicon.ico'/>
+
+    <link rel="stylesheet" href="./works.css">
+
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+      <style>
+        @media screen and (max-width:600px) {
+                #nav{
+                    display: none;
+                }
+
+                #logo{
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+                .menu{
+                    display: block;     
+                }
+
+                #head_icon{
+                    display: none;
+                }
+
+                #head_icon_white{
+                    text-align: left;
+                    display: inline;
+                    float: left;
+                    margin-left: 1em;
+                    margin-top: -40px;
+                }       
+        }   
+
+        @media screen and (min-width:600px){
+                .list1{
+                    display: none;
+                }
+        }
+
+   
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <header>
+
+      <div>
+        <div class="menu">
+            <label for="" class="menuBtn">
+                <i class="fas fa-bars" id="clickMenuBtn" onclick="clickMenu()"></i>
+            </label>
+        </div>
+
+        <script>
+            var tab= true;
+            function clickMenu(){
+                if(tab){
+                    var menu_ul= document.getElementById('menu_list');
+                    menu_ul.innerHTML= '<p><a href="" class="list1">company</p><p><a href="" class="list1">artist</p><p><a href="" class="list1">community</p>';
+                    tab=!tab;  //버튼을 다시 누르면 리스트들이 사라
+                }else{
+                    var menu_ul= document.getElementById('menu_list');
+                    menu_ul.innerHTML= '';
+                    tab=!tab;
+                }
+            }
+        </script>
+
+
+            <div id="head_icon" >
+                <a href=""><img width="24px" src="./img/ic_facebook_black.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/ic_instagram_black.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/ic_youtube_black.png" alt=""></a>
+                <a href=""><img id="ntv" width="24px" src="./img/ic_ntv_black.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/ic_vapp_black.png" alt=""></a>      
+            </div>
+
+            <div id="head_icon_white" >
+                <a href=""><img width="24px" src="./img/icon_facebook.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/icon_instagram.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/icon_youtube.png" alt=""></a>
+                <a href=""><img id="ntv_white" width="24px" src="./img/icon_ntv.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/icon_vapp.png" alt=""></a>      
+            </div>
+
+
+            <div id="menu_list">
+
+            </div>
+      </div>
+                
+            
+        
+
+
+
+            <div class="header_link">
+               
+                <img src="./img/soop.jpg.png" alt="soop_logo" id="logo">
+                
+
+                <div id="nav">
+                  <ul>
+                      <li><a class="a" href="#">company</a></li>
+                      <li><a class="a" href="#">artist</a></li>
+                      <li><a class="a" href="#">community</a></li>
+                  </ul>
+              </div>
+                
+                
+            </div>
+                 
+    </header>
+
+     
+
+
+
+    
+
+    
+
+    <div class="news">
+        <span id="line">----</span>
+        <h2 id="h2">WORKS</h2>
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="card mb-5 ml-3" style="width: 13rem;">
+            <a href="http://program.tving.com/tvn/tvnsummer/3/Vod/List" target="_blank"><img src="./img/summer_vacation.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">여름방학</h5>
+            </div>
+    
+        </div>
+    
+        <div class="card mb-5 ml-3" style="width: 13rem;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=191645" target="_blank"><img src="./img/wonderland.PNG" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">원더랜드</h5>
+            </div>
+        </div>
+    
+        <div class="card mb-5 ml-3" style="width: 13rem;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=191657" target="_blank"><img src="./img/remember.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">리멤버</h5>
+            </div>
+        </div>
+
+        <div class="card mb-5 ml-3" style="width: 13rem;">
+            <a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=184519"><img src="./img/emergency.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">비상선언</h5>
+            </div>
+        </div>
+
+
+        <div class="card mb-5 ml-3" style="width: 13rem;">
+            <a href="https://www.netflix.com/kr/title/80209129" target="_blank"><img src="./img/aneunyoung.jpg" class="card-img-top" alt="..."></a>
+            <div class="card-body">
+              <h5 class="card-title">보건교사 안은영</h5>
+            </div>
+        </div>    
+    </div>
+
+
+
+
+
+    <div class="input2">
+            
+        <svg id="aa" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+          </svg>
+        
+
+
+        
+        <input class="number" type="button" value="1"> 
+        <input class="number" type="button" value="2"> 
+        <input class="number" type="button" value="3"> 
+        <input class="number" type="button" value="4"> 
+        <input class="number" type="button" value="5"> 
+        
+
+
+        
+    
+        <svg id="cc" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
+            <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        
+    </div>
+    
+
+
+
+
+
+</body>
+</html>

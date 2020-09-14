@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST</title>
+
+    <link rel='shortcut icon' href='http://www.msoopent.com/data/common/favicon.ico'/>
+
+    <link rel="stylesheet" href="./post.css">
+
+    <!-- jquery 라이브러리 적용 [CDN] -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/write_page.js"></script>
+
+
+    <style>
+         @media screen and (max-width:600px) {
+                /* .container, .navbar{
+                    flex-direction: column;
+                } */
+                #nav{
+                    display: none;
+                }
+
+                #logo{
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+
+                .menu{
+                    display: block;
+                }
+
+
+                #head_icon{
+                    display: none;
+                }
+
+                #head_icon_white{
+                    text-align: left;
+                    display: inline;
+                    float: left;
+                    margin-left: 1em;
+                    margin-top: -40px;
+                }
+  
+        } 
+        
+        
+        @media screen and (min-width:600px){
+                .list1{
+                    display: none;
+                }
+        }
+    </style>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+</head>
+
+
+
+
+<body onload="getDatafromLocal()">
+
+
+    <header>
+
+        <div>
+            <div class="menu">
+                <label for="" class="menuBtn">
+                    <i class="fas fa-bars" id="clickMenuBtn" onclick="clickMenu()"></i>
+                </label>
+            </div>
+
+            <script>
+                var tab= true;
+                function clickMenu(){
+                    if(tab){
+                        var menu_ul= document.getElementById('menu_list');
+                        menu_ul.innerHTML= '<p><a href="" class="list1">company</p><p><a href="" class="list1">artist</p><p><a href="" class="list1">community</p>';
+                        tab=!tab; 
+                    }else{
+                        var menu_ul= document.getElementById('menu_list');
+                        menu_ul.innerHTML= '';
+                        tab=!tab;
+                    }
+                }
+            </script>
+
+
+
+        
+            <div id="head_icon" >
+                    <a href=""><img src="./img/ic_facebook_black.png" alt=""></a>
+                    <a href=""><img src="./img/ic_instagram_black.png" alt=""></a>
+                    <a href=""><img src="./img/ic_youtube_black.png" alt=""></a>
+                    <a href=""><img id="ntv" src="./img/ic_ntv_black.png" alt=""></a>
+                    <a href=""><img src="./img/ic_vapp_black.png" alt=""></a>
+            </div>
+
+            <div id="head_icon_white" >
+                <a href=""><img width="24px" src="./img/icon_facebook.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/icon_instagram.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/icon_youtube.png" alt=""></a>
+                <a href=""><img id="ntv_white" width="24px" src="./img/icon_ntv.png" alt=""></a>
+                <a href=""><img width="24px" src="./img/icon_vapp.png" alt=""></a>      
+            </div>
+
+
+            <div id="menu_list">
+
+            </div>
+        </div>
+
+     
+
+            <div class="header_link">
+               
+                <img src="./img/soop.jpg.png" alt="soop_logo" id="logo">
+                
+
+                <div id="nav">
+                    <ul>
+                        <li><a class="a" href="#">company</a></li>
+                        <li><a class="a" href="#">artist</a></li>
+                        <li><a class="a" href="#">community</a></li>
+                    </ul>
+                </div>
+                
+                
+            </div>
+                 
+    </header>
+
+     
+
+
+
+    <div id="container">
+        <h1 id="t1">CHECK YOUR POST</h1>
+        <P id="t2">SEND A LETTER TO YOUR STAR AND TELL THEM WHAT YOU THINK OF</P>
+    </div>
+
+
+    
+
+    <div class="news">
+        <span id="line">----</span>
+        <h3 id="h3">YOUR POST</h3>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <form action="./getData.php" method="POST" enctype="multipart/form-data">
+        <table class="table" width="60%">
+            <tr>
+                <td><h3 id="name">user ID</h3></td>
+            </tr>
+    
+            <tr>
+                <td><img id="file" src="./img/soop.png" alt="file image" width="500" height="300"></td>  
+            </tr>
+    
+            <tr>
+                <td><p id="title"><strong>title</strong></p></td>
+            </tr>
+    
+            <tr>
+                <td><textarea name="msg" id="msg" cols="70" rows="15">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat voluptatum accusantium sed neque doloribus, laborum, repellat magnam suscipit alias exercitationem veritatis, dignissimos reiciendis. Vitae quos sapiente corporis natus dolore libero?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores quisquam tempora ipsum eveniet alias blanditiis. Ullam ab quis corporis libero molestiae harum cumque, obcaecati iure voluptatum doloribus, voluptatibus, cum vel!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere facilis repellat repellendus soluta error laudantium quisquam nulla dignissimos reprehenderit adipisci cumque quaerat ullam quibusdam eveniet, tenetur obcaecati ipsam sunt inventore?
+                </textarea></td>
+            </tr>
+
+            <tr>
+                <td><textarea name="tag" id="tag" cols="70" rows="3">#수지 #편지 #숲 #엔터테인먼트</textarea></td>
+            </tr>
+        </table>
+
+        <a href="./fanLetter_page.html"><button id="btn" type="button" class="btn btn-secondary">목록보기</button></a>
+        
+    </form>
+
+    </section>
+
+
+   
+
+
+    
+        
+
+
+    
+
+       
+
+    
+ 
+    
+    
+
+
+
+    
+
+
+</body>
+</html>

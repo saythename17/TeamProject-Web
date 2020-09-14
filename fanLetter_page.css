@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu{
+    height: 50px;
+    background-color: #333;
+    display: none;
+}
+
+.menuBtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+#menu_list p{
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+
+.list1{
+    border-bottom: 1px solid lightgrey;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.2em;
+    font-family: "bold", serif;
+}
+
+
+
+.list1:hover{
+    color: #669933;
+    text-decoration-line: none;
+
+}
+
+
+
+
+
+
+
+
+
+/* black icon */
+#head_icon{
+    size:24px;
+    text-align: right;
+    margin-right: 2em;
+}
+
+#ntv{transform: rotate(270deg);}
+
+
+
+/* white icon */
+#head_icon_white{
+    size:24px;
+    text-align: right;
+    display: none;
+}
+
+#ntv_white{transform: rotate(270deg);}
+
+
+
+
+
+
+
+
+#logo{
+    width: 272px;
+    margin-top: -1.2%;
+    margin-left: 0.8%;
+}
+
+
+.header_link{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    display: flex;
+}
+
+#nav{
+    
+    margin-right: 0.8em;
+    height: 50px;
+}
+
+#nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+#nav ul li{
+    margin-left: 2em;
+    list-style: none;
+    display: inline-block;
+    font-family: "bold", serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+.a{
+    text-decoration-line: none;
+    color: #333;
+    margin: 0 5px;
+    text-transform: uppercase;
+} 
+
+
+
+.a:hover{
+    color: #669933;
+    text-decoration-line: none;
+    text-transform: uppercase;
+}
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+#container{
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 300px;
+    color: white;
+    background-image: url("./img/soop1.png");
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+#t1{
+    font-family: "light", serif;
+    font-size: 38px;
+    margin-bottom: 2px;}
+#t2{
+    font-family: "regular", serif;
+    font-size: 14px;
+    margin-top: 0px;}
+
+
+
+
+
+#line{
+    position: relative;
+    display: inline-flex;
+    font-size: 0;
+    width: 92px; height: 3px;
+    background-color: #1b1b1b;
+    text-align: center;
+}
+
+
+#title{
+    /*margin-top: 0.4em;*/
+    font-size: 30px;
+    font-family: "regular", serif;
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+
+
+.news{
+    
+    margin-top: 4em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav_link{
+    margin: 15px;
+    font-size: 16px;
+    font-family: "regular", serif;
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+#link:hover{
+    color: #669933;
+    text-decoration-line: none;
+}
+
+
+#link_all{
+    color: #669933;
+    text-decoration-line: none;
+}
+
+#link{
+    color: #1b1b1b;
+    text-decoration-line: none;
+}
+
+.write{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    display: flex;
+}
+
+#btn_write{
+    margin: 0em;
+    height: 2.5em;
+    margin-right: 1.5em;
+    background-color: #669933;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+.table{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+    margin-bottom: 30px;
+    
+}
+
+td{
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+
+
+.tr1{
+    border-top: 1px solid #D5D5D5; 
+    padding: 20px;
+}
+
+#title{
+    color: #1b1b1b;
+    
+}
+
+
+
+
+
+
+/* 테이블 제목 */
+#td_title{
+    font-size: 0em;
+    font-family: "regular", serif;
+    color: #333;
+}
+
+
+#td_title:hover{
+    font-size: 0em;
+    font-family: "regular", serif;
+    color: #669933;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+
+#input_text{
+    margin: 10px;
+}
+
+.input2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 30px;
+}
+
+#aa{
+    margin-right: 1em;
+    color: #333;
+}
+
+#aa:hover{
+    color: #669933;
+}
+
+
+#cc{
+    margin-left: 1em;
+    color: #333;
+}
+
+
+#cc:hover{
+    color: #669933;
+}
+
+
+.number{
+    background-color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.5em;
+    border: none;
+}
+
+.number:hover{
+    color: #669933;
+}
+
+#option{
+    padding: 6px 6px;
+    font-size: 1em;
+}
+
+
+
+#input_text{
+    padding: 7px 7px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+
+#btn_search{ 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+#btn_search:hover{
+    background-color: #669933;
+    text-decoration-line: none;
+}
+
+
+
+
+
+
+
+
+
+
+ /* font */
+
+@font-face{
+    font-family: "bold";
+    src: url(./font/NotoSans-Bold.ttf);   
+    /* css의 다른 파일 경로는 url() 사용 */
+    }
+
+    @font-face{
+    font-family: "light";
+    src: url(./font/NotoSans-Light.ttf);   
+    }
+
+    @font-face{
+        font-family: "regular";
+        src: url(./font/NotoSans-Regular.ttf);   
+    }
+
+    @font-face {
+        font-family: "medium";
+        src: url(./font/NotoSans-Medium.ttf);
+    }
+
+
+
+
+
+
+/* 테이블 속성 */
+    .td_title{
+        font-size: 2em;
+        font-family: "light", serif;
+        color: #333;
+        text-decoration-line: none;
+        
+    }
+    
+    .td_title:hover{
+        color: #669933;
+        font-family: "bold", serif;
+        text-decoration-line: none;
+    }

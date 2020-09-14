@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.menu{
+    height: 50px;
+    background-color: #333;
+    display: none;
+}
+
+.menuBtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#menu_list p{
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 50px;
+}
+
+
+.list1{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1.2em;
+    font-family: "bold", serif;
+}
+
+.list1:hover{
+    color: #669933;
+    text-decoration-line: none;
+
+}
+
+
+
+
+
+
+/* black icon */
+#head_icon{
+    size:24px;
+    text-align: right;
+    margin-right: 2em;
+}
+
+#ntv{transform: rotate(270deg);}
+
+
+
+/* white icon */
+#head_icon_white{
+    size:24px;
+    text-align: right;
+    display: none;
+}
+
+#ntv_white{transform: rotate(270deg);}
+
+
+#logo{
+    width: 272px;
+    margin-top: -1.2%;
+    margin-left: 0.8%;
+}
+
+
+.header_link{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    display: flex;
+}
+
+#nav{
+    margin-left: 2.5em;
+    margin-right: 1em;
+    height: 50px;
+}
+
+#nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+#nav ul li{
+    margin-left: 2em;
+    list-style: none;
+    display: inline-block;
+    font-family: "bold", serif;
+    color: #333;
+    font-size: 18px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+
+.a{
+    text-decoration-line: none;
+    color: #333;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+/* .a{
+    font-size: 20px;
+    color: #1b1b1b;
+    font-weight: bolder;
+    margin-left: 2em; 
+    text-decoration-line: none;
+} */
+
+.a:hover{
+    color: #669933;
+    text-decoration-line: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container{
+    height: 300px;
+    color: white;
+    background-image: url("./img/soop1.png");
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#t1{
+    font-family: "Regular", serif;
+    font-size: 38px;
+    margin-bottom: 2px;}
+#t2{
+    font-family: "regular", serif;
+    font-size: 14px;
+    margin-top: 0px;}
+
+
+    #write{
+        font-size: 30px;
+        color: #333;
+        font-family: "regular";
+        margin-top: 10px;
+    }
+
+
+
+#line{
+    position: relative;
+    display: inline-flex;
+    font-size: 0;
+    width: 92px; height: 3px;
+    background-color: #1b1b1b;
+    text-align: center;
+}
+
+
+
+.news{
+    
+    margin-top: 4em;
+    margin-bottom: 4em;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+#table{
+  width: 60%;
+  border-collapse: collapse;
+  border-top: 2px solid #555555;
+  border-bottom: 2px solid #555555;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  
+}
+
+
+
+td{
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+    
+}
+
+
+
+
+
+
+
+
+
+#file_size{
+    font-size: 1px;
+    color: grey;
+}
+
+
+
+
+
+
+.btn{
+    display: inline;
+    float: right;
+    margin-top: 2em;
+    margin-right: 2em;
+}
+
+#btn_cancel{
+    color: white;
+    padding: 8px 20px;
+    font-size: 13px;
+    
+}
+
+
+#btn_ok{
+    background-color: #669933;
+    color: white;
+    padding: 8px 20px;
+    font-size: 13px;
+    margin-right: 200px;
+   
+}
+
+
+#name,#pw,#email,#phone,#title,#tag,#file{
+    height: 30px;
+}
+
+#name,#pw,#email,#phone,#title,#msg,#tag{
+  
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+
+}
+
+#msg{
+    overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 미디어 쿼리 */
+@media screen and (max-width:600px) {
+    /* .container, .navbar{
+        flex-direction: column;
+    } */
+    #nav{
+        display: none;
+    }
+
+    #logo{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 60%;
+    }
+    #head_icon{
+        text-align: left;
+    }
+
+
+}
+
+
+
+
+
+/* 미디어 쿼리 for Table */
+    @media 
+    only screen and (max-width: 760px),
+    (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, tr { 
+        display: block; 
+    }
+
+    input{
+        width: 60%;
+      }
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* font */
+    @font-face{
+    font-family: "bold";
+    src: url(./font/NotoSans-Bold.ttf);   
+    /* css의 다른 파일 경로는 url() 사용 */
+    }
+
+    @font-face{
+    font-family: "light";
+    src: url(./font/NotoSans-Light.ttf);   
+    }
+
+    @font-face{
+        font-family: "regular";
+        src: url(./font/NotoSans-Regular.ttf);   
+    }
+
+    @font-face {
+        font-family: "medium";
+        src: url(./font/NotoSans-Medium.ttf);
+    }
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
