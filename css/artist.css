@@ -31,7 +31,7 @@ body{
 
 
 /* Response Wrap Design  */
-@media screen and (max-width:900px){
+@media screen and (max-width:980px){
 
     #top i{
         display: none;
@@ -156,10 +156,13 @@ body{
     #imgrow{
         display: flex;
         flex-direction: column;
+        column-count: 2;
     }
-    .imgrow a{ 
-        height: 350px;
-        border-radius: 1.5em;
+    .imgrow img{ 
+        max-height: 90%;
+        max-width: 90%;
+        min-width: 90%;
+        /* border-radius: 1em; */
         overflow: hidden;
         margin-left: auto; margin-right: auto;
     }
@@ -168,7 +171,7 @@ body{
         max-height: 90%;
         max-width: 90%;
         min-width: 90%;
-        margin-top: 1.5em;
+        margin-top: 1em;
     }
 
 }
